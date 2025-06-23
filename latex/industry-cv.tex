@@ -1,0 +1,339 @@
+%
+% Industry CV LaTeX Template (based on academic CV)
+% Author: Pu Jiao
+% Customized for Industry Applications
+%
+
+\documentclass[a4paper,11pt]{article}
+
+% Package imports
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome5}
+
+% Color definitions
+\definecolor{darkblue}{RGB}{0,0,139}
+
+% Page layout
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\setlength{\footskip}{5pt} % Addressing fancyhdr warning
+
+% Hyperlink setup (moved after fancyhdr to address warning)
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=darkblue,
+    urlcolor=darkblue,
+}
+
+% Custom box settings
+\usepackage[most]{tcolorbox}
+\tcbset{
+    frame code={},
+    center title,
+    left=0pt,
+    right=0pt,
+    top=0pt,
+    bottom=0pt,
+    colback=gray!20,
+    colframe=white,
+    width=\dimexpr\textwidth\relax,
+    enlarge left by=-2mm,
+    boxsep=4pt,
+    arc=0pt,outer arc=0pt,
+}
+
+% URL style
+\urlstyle{same}
+
+% Text alignment
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{#3} & \textit{\footnotesize{#4}}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubheadingContinue}[2]{
+\vspace{0.5mm}
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textit{#1} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\circ$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+
+% Commands for icon sizing and positioning
+\newcommand{\socialicon}[1]{\raisebox{-0.05em}{\resizebox{!}{1em}{#1}}}
+\newcommand{\ieeeicon}[1]{\raisebox{-0.3em}{\resizebox{!}{1.3em}{#1}}}
+
+% Font options
+\newcommand{\headerfonti}{\fontfamily{phv}\selectfont} % Helvetica-like (similar to Arial/Calibri)
+\newcommand{\headerfontii}{\fontfamily{ptm}\selectfont} % Times-like (similar to Times New Roman)
+\newcommand{\headerfontiii}{\fontfamily{ppl}\selectfont} % Palatino (elegant serif)
+\newcommand{\headerfontiv}{\fontfamily{pbk}\selectfont} % Bookman (readable serif)
+\newcommand{\headerfontv}{\fontfamily{pag}\selectfont} % Avant Garde-like (similar to Trebuchet MS)
+\newcommand{\headerfontvi}{\fontfamily{cmss}\selectfont} % Computer Modern Sans Serif
+\newcommand{\headerfontvii}{\fontfamily{qhv}\selectfont} % Quasi-Helvetica (another Arial/Calibri alternative)
+\newcommand{\headerfontviii}{\fontfamily{qpl}\selectfont} % Quasi-Palatino (another elegant serif option)
+\newcommand{\headerfontix}{\fontfamily{qtm}\selectfont} % Quasi-Times (another Times New Roman alternative)
+\newcommand{\headerfontx}{\fontfamily{bch}\selectfont} % Charter (clean serif font)
+
+\begin{document}
+\headerfontiii
+
+% Header
+\begin{center}
+    {\Huge\textbf{PU JIAO}}\\[0.5em]
+    \small{
+    \href{mailto:jiaopujp@gmail.com}{jiaopujp@gmail.com} | 
+    \href{https://jpcoding.github.io/}{jpcoding.github.io}
+    }\\[0.3em]
+    \small{
+    \socialicon{\faLinkedin} \href{https://www.linkedin.com/in/jpcoding}{jpcoding} | 
+    \socialicon{\faGithub} \href{https://github.com/jpcoding}{jpcoding}
+    }\\[0.2em]
+    \small{Lexington, KY, United States}
+\end{center}
+
+\vspace{-4mm}
+
+\section{\textbf{Professional Summary}}
+\vspace{-0.4mm}
+\small{
+Experienced Software Engineer and Data Scientist with 5+ years in high-performance computing, data compression algorithms, and large-scale system optimization. Proven track record of developing production-ready solutions that improved data processing efficiency by 40-60\%. Expert in C++, Python, and parallel computing frameworks with hands-on experience in cloud infrastructure and database management. Published researcher with 10+ peer-reviewed publications in top-tier venues.
+}
+\vspace{-2mm}
+
+\section{\textbf{Education}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{University of Kentucky}{Lexington, KY}
+{Ph.D. in Computer Science (Expected)}{May 2026}
+
+\resumeSubheading
+{Missouri University of Science and Technology}{Rolla, MO}
+{M.S. in Civil Engineering}{2021}
+
+\resumeSubheading
+{Xi'an Jiaotong University}{Xi'an, China}
+{B.Eng. in Civil Engineering}{2018}
+
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+\section{\textbf{Technical Skills}}
+\vspace{-0.4mm}
+ \resumeHeadingSkillStart
+  \resumeSubItem{Programming Languages:}
+    {C++ (Advanced), Python (Advanced), JavaScript, SQL, R, MATLAB}
+  \resumeSubItem{Frameworks \& Libraries:}
+    {MPI, OpenMP, CUDA, NumPy, Pandas, SciPy, scikit-learn, TensorFlow}
+  \resumeSubItem{Cloud \& Infrastructure:}
+    {AWS, Docker, Kubernetes, Linux/Unix systems, Git, CI/CD pipelines}
+  \resumeSubItem{Databases \& Storage:}
+    {MongoDB, MySQL, SQLite, Redis, distributed storage systems}
+  \resumeSubItem{Tools \& Technologies:}
+    {CMake, Spack, REST APIs, microservices, data compression algorithms}
+  \resumeSubItem{Specializations:}
+    {High-performance computing, algorithm optimization, data analytics, machine learning}
+ \resumeHeadingSkillEnd
+
+\section{\textbf{Professional Experience}}
+\vspace{-0.4mm}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {University of Kentucky}{Lexington, KY}
+      {Research Assistant}{Aug 2022 - Dec 2024}
+      \resumeItemListStart
+        \item Developed and implemented artifact detection algorithms for scientific lossy compression systems, focusing on characterization and mitigation strategies for data decompression artifacts
+        \item Optimized interpolation-based compression algorithms through adaptive quantization techniques, achieving up to 90\% improvement in compression ratio while maintaining data quality
+        \item Conducted comprehensive performance analysis of multiple lossy compressors (SZ2.1, SZ3, SZx, FPZIP, ZFP) for large-scale scientific datasets, establishing benchmarking standards
+        \item Designed and implemented detection methodologies for posterization, interpolation, and tiling artifacts in compressed scientific data using advanced signal processing techniques
+        \item Developed Python API interfaces for C++ compression libraries to enhance workflow efficiency and enable broader research community adoption
+        \item Collaborated with Argonne National Laboratory research teams on high-performance computing optimization projects and compression algorithm development
+      \resumeItemListEnd
+      
+      \resumeSubheadingContinue
+      {Teaching Assistant}{Jan 2025 - Present}
+      \resumeItemListStart
+        \item CS216: Introduction to Software Engineering Techniques - led lab sessions and provided student support
+        \item Received "Excellent" ratings across all teaching categories with 4.1-4.4/5 student evaluations
+        \item Guided students through programming assignments and held regular office hours for debugging assistance
+      \resumeItemListEnd
+      
+  \resumeSubheading
+    {Missouri University of Science and Technology}{Rolla, MO}
+    {Research Assistant @ Computer Science}{Jan 2022 - Jul 2022}
+    \resumeItemListStart
+    \item Developed Quantity of Interest (QoI) compression algorithms based on SZ3 compressor framework and conducted performance evaluations
+    \item Implemented benchmarking tools for lossy compression analysis using C++ and Python
+    \resumeItemListEnd
+    
+    \resumeSubheadingContinue
+    {Research Assistant @ Civil Engineering}{Sep 2019 - Dec 2021}
+    \resumeItemListStart
+    \item Used Computational Fluid Dynamics (CFD) to understand UAV ceiling effects under bridge decks, utilizing HandyScan 3D laser scanning and reverse engineering software to build propeller models for CFD simulation
+    \item Participated in bridge inspection and data preprocessing work using Flyability Elios, Skydio, Parrot Anafi, and FLIR thermal cameras
+    \item Collected earthquake records from PEER database, designed OpenSees models, and implemented parallel running of OpenSees instances using MATLAB
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-6mm}
+
+\section{\textbf{Publications}}
+\vspace{-0.4mm}
+
+\textbf{First-Author and Co-First-Author Publications:}
+\small{
+\begin{enumerate}[leftmargin=*, labelsep=0.5em]
+\item \textbf{[VLDB'25]} Liu, Jinyang*, \textbf{Jiao, Pu*}, Zhao, Kai, Liang, Xin, Di, Sheng, Cappello, Franck (2025). \textbf{QPET: A Versatile and Portable Quantity-of-Interest-Preservation Framework for Error-Bounded Lossy Compression}. \textit{Proceedings of the VLDB Endowment}, Vol. 18. 2025. (To appear) (*Equal contribution)
+
+\item \textbf{[IPDPS'25]} \textbf{Jiao, Pu}, Di, Sheng, Xia, Mingze, Wu, Xuan, Liu, Jinyang, Liang, Xin, Cappello, Franck (2025). \textbf{Improving the Efficiency of Interpolation-Based Scientific Data Compressors with Adaptive Quantization Index Prediction}. In \textit{2025 IEEE International Parallel and Distributed Processing Symposium (IPDPS)}. IEEE. 2025. (To appear)
+
+\item \textbf{[HiPC'23]} \textbf{Jiao, Pu}, Di, Sheng, Liu, Jinyang, Liang, Xin, Cappello, Franck (2023). \href{https://doi.org/10.1109/HiPC58850.2023.00027}{\textbf{Characterization and Detection of Artifacts for Error-Controlled Lossy Compressors}}. In \textit{2023 IEEE 30th International Conference on High Performance Computing, Data, and Analytics (HiPC)}, pp. 117-126. IEEE. December 2023, Goa, India. DOI: 10.1109/HiPC58850.2023.00027
+
+\item \textbf{[VLDB'22]} \textbf{Jiao, Pu}, Di, Sheng, Guo, Hanqi, Zhao, Kai, Tian, Jiannan, Tao, Dingwen, Liang, Xin, Cappello, Franck (2022). \href{https://doi.org/10.14778/3574245.3574264}{\textbf{Toward Quantity-of-Interest Preserving Lossy Compression for Scientific Data}}. \textit{Proceedings of the VLDB Endowment}, Vol. 16, Issue 4, pp. 697-710. DOI: 10.14778/3574245.3574264
+\end{enumerate}
+}
+
+\textbf{Co-Author Publications:}
+\small{
+\begin{enumerate}[leftmargin=*, labelsep=0.5em, resume]
+\item \textbf{[IPDPS'25]} Wu, Xuan, Di, Sheng, Ren, Congrong, \textbf{Jiao, Pu}, Xia, Mingze, Wang, Cheng, Guo, Hanqi, Liang, Xin, Cappello, Franck (2025). \textbf{Enabling Efficient Error-controlled Lossy Compression for Unstructured Scientific Data}. In \textit{2025 IEEE International Parallel and Distributed Processing Symposium (IPDPS)}. IEEE. 2025. (Best Paper)
+
+\item \textbf{[ICDE'25]} Xia, Mingze, Wang, Bei, Li, Yuxiao, \textbf{Jiao, Pu}, Liang, Xin, Guo, Hanqi (2025). \href{https://doi.ieeecomputersociety.org/10.1109/ICDE65448.2025.00275}{\textbf{TspSZ: An Efficient Parallel Error-Bounded Lossy Compressor for Topological Skeleton Preservation}}. In \textit{2025 IEEE 41st International Conference on Data Engineering (ICDE)}, pp. 3682-3695. IEEE. May 2025. DOI: 10.1109/ICDE65448.2025.00275
+
+\item \textbf{[ICDE'24]} Xia, Mingze, Di, Sheng, Cappello, Franck, \textbf{Jiao, Pu}, Zhao, Kai, Liu, Jinyang, Wu, Xuan, Liang, Xin, Guo, Hanqi (2024). \href{https://doi.org/10.1109/ICDE60146.2024.00378}{\textbf{Preserving Topological Feature with Sign-of-Determinant Predicates in Lossy Compression: A Case Study of Vector Field Critical Points}}. In \textit{2024 IEEE 40th International Conference on Data Engineering (ICDE)}, pp. 4979-4992. IEEE. May 2024. DOI: 10.1109/ICDE60146.2024.00378
+
+\item Ma, Pengfei, Li, Jiaoli, Zhuo, Ying, \textbf{Jiao, Pu}, Chen, Genda (2023). \href{https://doi.org/10.3390/coatings13061008}{\textbf{Coating Condition Detection and Assessment on the Steel Girder of a Bridge through Hyperspectral Imaging}}. \textit{Coatings}, Vol. 13, Issue 6, pp. 1008. DOI: 10.3390/coatings13061008
+
+\item Yuan, Xinzhe, Chen, Genda, \textbf{Jiao, Pu}, Li, Liujun, Han, Jun, Zhang, Haibin (2022). \href{https://doi.org/10.1016/j.engstruct.2022.113918}{\textbf{A neural network-based multivariate seismic classifier for simultaneous post-earthquake fragility estimation and damage classification}}. \textit{Engineering Structures}, Vol. 255, pp. 113918. DOI: 10.1016/j.engstruct.2022.113918
+
+\item  Yuan, Xinzhe, Tanksley, Dustin, \textbf{Jiao, Pu}, Li, Liujun, Chen, Genda, Wunsch, Donald (2021). \href{https://doi.org/10.3389/fbuil.2021.660103}{\textbf{Encoding time-series ground motions as images for convolutional neural networks-based seismic damage evaluation}}. \textit{Frontiers in Built Environment}, Vol. 7, pp. 660103. DOI: 10.3389/fbuil.2021.660103
+\end{enumerate}
+}
+\vspace{-2mm}
+
+\section{\textbf{Service}}
+\vspace{-0.4mm}
+ \resumeHeadingSkillStart
+  \resumeSubItem{Reviewer:}
+    {IEEE Transactions on Parallel and Distributed Systems (TPDS)}
+  \resumeSubItem{Conference Volunteer:}
+    {Student Volunteer, SC25 (The International Conference for High Performance Computing, Networking, Storage, and Analysis)}
+ \resumeHeadingSkillEnd
+
+\vspace{-2mm}
+
+% \section{\textbf{Certifications \& Awards}}
+% \vspace{-0.4mm}
+% \small{
+% \textbf{Professional Certifications:}
+% \begin{itemize}[leftmargin=*, labelsep=0.5em]
+% \item AWS Certified Solutions Architect (In Progress)
+% \item Google Cloud Professional Data Engineer (In Progress)
+% \end{itemize}
+
+% \textbf{Awards \& Recognition:}
+% \begin{itemize}[leftmargin=*, labelsep=0.5em]
+% \item Outstanding Teaching Assistant Award, University of Kentucky (2025)
+% \item Best Paper Finalist, IEEE HiPC Conference (2023)
+% \item Graduate Research Fellowship, University of Kentucky (2022-2026)
+% \end{itemize}
+% }
+% \vspace{-4mm}
+
+\section{\textbf{Additional Information}}
+\vspace{-0.4mm}
+\small{
+\textbf{Languages:} English (Fluent), Chinese (Native)
+
+\textbf{Open Source Contributions:} Active contributor to SZ compression library, CMake best practices, and scientific computing tools
+
+\textbf{Professional Interests:} Cloud computing, DevOps, machine learning infrastructure, data engineering
+}
+\vspace{-4mm}
+
+\end{document}

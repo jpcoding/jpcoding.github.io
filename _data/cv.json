@@ -1,152 +1,227 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "PU JIAO",
+    "email": "jiaopujp@gmail.com",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://jpcoding.github.io/",
+    "summary": "Ph.D. candidate in Computer Science at the University of Kentucky. Research focuses on high-performance computing, scientific data management and reduction, and deep learning for scientific data compression.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
+      "city": "Lexington",
       "countryCode": "US",
-      "region": ""
+      "region": "KY"
     },
     "profiles": [
       {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "http://orcid.org/yourorcidurl"
+        "network": "LinkedIn",
+        "username": "Pu Jiao",
+        "url": "https://www.linkedin.com/in/pu-jiao-4b309b212/"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "jpcoding",
+        "url": "https://github.com/jpcoding"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "University of Kentucky",
+      "position": "Research Assistant",
+      "startDate": "2022-08-01",
+      "endDate": "2024-12-01",
+      "summary": "Research in HPC and error-controlled lossy compression (QoI preservation, adaptive quantization).",
+      "highlights": [
+        "Publications at VLDB, IPDPS, and HiPC",
+        "Collaborated with Argonne National Laboratory",
+        "Developed QoI-preserving compression frameworks"
+      ]
+    },
+    {
+      "company": "University of Kentucky",
+      "position": "Teaching Assistant",
+      "startDate": "2025-01-01",
+      "summary": "Teaching Assistant for CS216: Intro to Software Engineering Techniques.",
+      "highlights": [
+        "Led lab sessions and office hours",
+        "Received \"Excellent\" TA ratings; student evaluations 4.1–4.4/5"
+      ]
+    },
+    {
+      "company": "Missouri University of Science and Technology",
+      "position": "Research Assistant, Computer Science Department",
+      "startDate": "2022-01-01",
+      "endDate": "2022-07-31",
+      "summary": "Developed QoI compression algorithms based on SZ3 and benchmarking tools."
+    },
+    {
+      "company": "Missouri University of Science and Technology",
+      "position": "Research Assistant, Civil Engineering Department",
+      "startDate": "2019-09-01",
+      "endDate": "2021-12-31",
+      "summary": "CFD analysis of UAV ceiling effects; bridge inspection and data processing; seismic modeling with OpenSees."
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
+      "institution": "University of Kentucky",
+      "area": "Ph.D. in Computer Science",
+      "studyType": "Ph.D.",
+      "startDate": "2022-08-01",
+      "endDate": "2026",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
+      "institution": "Missouri University of Science and Technology",
+      "area": "M.S. in Civil Engineering",
+      "studyType": "M.S.",
+      "startDate": "2019-09-01",
+      "endDate": "2021",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
+      "institution": "Institute of Engineering Mechanics, China Earthquake Administration",
+      "area": "M.Eng. in Structural Engineering",
+      "studyType": "M.Eng.",
       "startDate": "",
-      "endDate": "2012",
+      "endDate": "",
+      "gpa": null,
+      "courses": []
+    },
+    {
+      "institution": "Xi'an Jiaotong University",
+      "area": "B.Eng. in Civil Engineering",
+      "studyType": "B.Eng.",
+      "startDate": "",
+      "endDate": "",
       "gpa": null,
       "courses": []
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "level": "",
+      "keywords": ["C++", "Python", "JavaScript", "SQL", "R", "MATLAB"]
+    },
+    {
+      "name": "High-Performance Computing",
+      "keywords": ["MPI", "OpenMP", "CUDA", "Parallel algorithms", "Scientific computing"]
+    },
+    {
+      "name": "Build Systems & Tools",
+      "keywords": ["CMake", "Spack", "Git", "Linux/Unix"]
+    },
+    {
+      "name": "Data Science & Analysis",
+      "keywords": ["NumPy", "Pandas", "SciPy", "Matplotlib", "scikit-learn"]
+    },
+    {
+      "name": "Databases",
+      "keywords": ["MongoDB", "MySQL", "SQLite"]
+    },
+    {
+      "name": "Compression Technologies",
+      "keywords": ["SZ2.1", "SZ3", "SZx", "FPZIP", "ZFP", "Lossy compression algorithms"]
+    },
+    {
+      "name": "Simulation Software",
+      "keywords": ["OpenSees", "CFD", "ANSYS", "Structural analysis tools"]
+    },
+    {
+      "name": "Research Methodologies",
+      "keywords": ["Algorithm design", "Performance optimization", "Artifact detection", "Experimental validation"]
+    }
+  ],
+  "languages": [
+    { "language": "English", "fluency": "Fluent" },
+    { "language": "Chinese", "fluency": "Native" }
+  ],
+  "interests": [
+    { "name": "High-performance computing" },
+    { "name": "Scientific data compression" },
+    { "name": "UAV technology" },
+    { "name": "Structural engineering" }
+  ],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "http://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "QPET: A Versatile and Portable Quantity-of-Interest-Preservation Framework for Error-Bounded Lossy Compression",
+      "publisher": "Proceedings of the VLDB Endowment",
+      "releaseDate": "2025-01-01",
+      "website": "https://doi.org/",
+      "summary": "To appear."
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "http://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "Improving the Efficiency of Interpolation-Based Scientific Data Compressors with Adaptive Quantization Index Prediction",
+      "publisher": "2025 IEEE International Parallel and Distributed Processing Symposium (IPDPS)",
+      "releaseDate": "2025-01-01",
+      "website": "https://ieeexplore.ieee.org/",
+      "summary": "To appear."
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
+      "name": "Characterization and Detection of Artifacts for Error-Controlled Lossy Compressors",
+      "publisher": "HiPC 2023",
+      "releaseDate": "2023-12-01",
+      "website": "https://doi.org/10.1109/HiPC58850.2023.00027",
+      "summary": "Detecting and characterizing artifacts introduced by error-controlled lossy compressors."
     },
     {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "Toward Quantity-of-Interest Preserving Lossy Compression for Scientific Data",
+      "publisher": "Proceedings of the VLDB Endowment",
+      "releaseDate": "2022-01-01",
+      "website": "https://doi.org/10.14778/3574245.3574264",
+      "summary": "QoI-preserving lossy compression for scientific data."
+    },
+    {
+      "name": "Enabling Efficient Error-controlled Lossy Compression for Unstructured Scientific Data",
+      "publisher": "2025 IEEE International Parallel and Distributed Processing Symposium (IPDPS)",
+      "releaseDate": "2025-01-01",
+      "website": "https://ieeexplore.ieee.org/"
+    },
+    {
+      "name": "TspSZ: An Efficient Parallel Error-Bounded Lossy Compressor for Topological Skeleton Preservation",
+      "publisher": "2025 IEEE 41st International Conference on Data Engineering (ICDE)",
+      "releaseDate": "2025-05-01",
+      "website": "https://doi.ieeecomputersociety.org/10.1109/ICDE65448.2025.00275"
+    },
+    {
+      "name": "Preserving Topological Feature with Sign-of-Determinant Predicates in Lossy Compression: A Case Study of Vector Field Critical Points",
+      "publisher": "2024 IEEE 40th International Conference on Data Engineering (ICDE)",
+      "releaseDate": "2024-05-01",
+      "website": "https://doi.org/10.1109/ICDE60146.2024.00378"
+    },
+    {
+      "name": "Coating Condition Detection and Assessment on the Steel Girder of a Bridge through Hyperspectral Imaging",
+      "publisher": "Coatings",
+      "releaseDate": "2023-06-01",
+      "website": "https://doi.org/10.3390/coatings13061008"
+    },
+    {
+      "name": "A neural network-based multivariate seismic classifier for simultaneous post-earthquake fragility estimation and damage classification",
+      "publisher": "Engineering Structures",
+      "releaseDate": "2022-01-01",
+      "website": "https://doi.org/10.1016/j.engstruct.2022.113918"
+    },
+    {
+      "name": "Encoding time-series ground motions as images for convolutional neural networks-based seismic damage evaluation",
+      "publisher": "Frontiers in Built Environment",
+      "releaseDate": "2021-01-01",
+      "website": "https://doi.org/10.3389/fbuil.2021.660103"
     }
   ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
+  "presentations": [],
   "teaching": [
     {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
+      "course": "CS216: Intro to Software Engineering Techniques",
+      "institution": "University of Kentucky",
+      "date": "2025-01-01",
+      "role": "Teaching Assistant",
+      "description": "Led lab sessions; office hours; highly rated TA."
     }
   ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "portfolio": []
 }

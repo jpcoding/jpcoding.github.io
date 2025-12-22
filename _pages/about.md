@@ -24,7 +24,10 @@ Education
 - B.Eng. in Civil Engineering, Xi'an Jiaotong University
 
 Selected Publications
+- [IPDPS'26] Mitigating Artifacts in Pre-quantization Based Scientific Data Compressors with Quantization-aware Interpolation. Jiao, Pu, Sheng Di, Jiannan Tian, Mingze Xia, Xuan Wu, Yang Zhang, Xin Liang, Franck Cappello.
+
 - [VLDB'25] QPET: A Versatile and Portable Quantity-of-Interest-Preservation Framework for Error-Bounded Lossy Compression. Liu, Jinyang*, Jiao, Pu*, Zhao, Kai, Liang, Xin, Di, Sheng, Cappello, Franck (*Equal contribution)
+
 - [IPDPS'25] Improving the Efficiency of Interpolation-Based Scientific Data Compressors with Adaptive Quantization Index Prediction. Jiao, Pu, Di, Sheng, Xia, Mingze, Wu, Xuan, Liu, Jinyang, Liang, Xin, Cappello, Franck
 - [HiPC'23] Characterization and Detection of Artifacts for Error-Controlled Lossy Compressors. Jiao, Pu, Di, Sheng, Liu, Jinyang, Liang, Xin, Cappello, Franck
 - [VLDB'22] Toward Quantity-of-Interest Preserving Lossy Compression for Scientific Data. Jiao, Pu, Di, Sheng, Guo, Hanqi, Zhao, Kai, Tian, Jiannan, Tao, Dingwen, Liang, Xin, Cappello, Franck

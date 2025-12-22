@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 excerpt: 'Posterization artifact mitgation [Paper Link Pending]
 '
-date: 2025-01-01
+date: 2026-05-01
 venue: 'IPDPS'
 authors: 'Jiao, Pu; Di, Sheng; Tian, Jiannan; Xia,Mingze; Wu, Xuan; Zhang,Yang; Liang, Xin; Cappello, Franck'
 published: true

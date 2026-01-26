@@ -22,6 +22,11 @@
         "network": "GitHub",
         "username": "jpcoding",
         "url": "https://github.com/jpcoding"
+      },
+      {
+        "network": "Google Scholar",
+        "username": "Pu Jiao",
+        "url": "https://scholar.google.com/citations?user=6blhwnoAAAAJ&hl=en"
       }
     ]
   },
@@ -78,7 +83,7 @@
       "area": "M.S. in Civil Engineering",
       "studyType": "M.S.",
       "startDate": "2019-09-01",
-      "endDate": "2021",
+      "endDate": "2022-07-31",
       "gpa": null,
       "courses": []
     },
@@ -86,8 +91,8 @@
       "institution": "Institute of Engineering Mechanics, China Earthquake Administration",
       "area": "M.Eng. in Structural Engineering",
       "studyType": "M.Eng.",
-      "startDate": "",
-      "endDate": "",
+      "startDate": "2016-09-01",
+      "endDate": "2019",
       "gpa": null,
       "courses": []
     },
@@ -95,8 +100,8 @@
       "institution": "Xi'an Jiaotong University",
       "area": "B.Eng. in Civil Engineering",
       "studyType": "B.Eng.",
-      "startDate": "",
-      "endDate": "",
+      "startDate": "2012-09-01",
+      "endDate": "2016",
       "gpa": null,
       "courses": []
     }

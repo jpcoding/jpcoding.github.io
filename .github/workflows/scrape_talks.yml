@@ -5,7 +5,7 @@ on:
     paths:
       - 'talks/**'
       - '_talks/**'
-      - 'talkmap.ipynb'
+      - 'talkmap.py'
 
 jobs:
   build:
@@ -21,12 +21,12 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install jupyter pandas requests beautifulsoup4 geopy  # Add other dependencies as needed
+        pip install jupyter pandas requests beautifulsoup4 geopy python-frontmatter # Add other dependencies as needed
         pip install getorg --upgrade
 
-    - name: Run Jupyter Notebook
+    - name: Run Talkmap Script
       run: |
-        jupyter nbconvert --to notebook --execute talkmap.ipynb --output talkmap_out.ipynb
+        python talkmap.py
 
     - name: Commit changes
       run: |

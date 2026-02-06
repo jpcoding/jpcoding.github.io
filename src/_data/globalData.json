@@ -1,0 +1,14 @@
+{
+  "navigation": [
+    { "title": "Home", "path": "/", "fullMatch": true },
+    { "title": "Publications", "path": "/publications/", "fullMatch": false },
+    { "title": "Teaching", "path": "/teaching/", "fullMatch": false },
+    { "title": "CV", "path": "/cv/", "fullMatch": false },
+    { "title": "RSS", "path": "/feed.xml", "fullMatch": false }
+  ],
+  "publicationCategories": [
+    { "key": "books", "title": "Books" },
+    { "key": "manuscripts", "title": "Journal Articles" },
+    { "key": "conferences", "title": "Conference Papers" }
+  ]
+}

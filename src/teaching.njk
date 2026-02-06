@@ -1,0 +1,24 @@
+---
+layout: "base.njk"
+title: "Teaching"
+description: "Teaching experience, roles, and course details."
+eleventyNavigation:
+  key: Teaching
+---
+
+<p class="page-lede">Highlights from teaching assistantships and instructional roles at the University of Kentucky.</p>
+
+{%- for item in collections.teaching | reverse -%}
+<article class="teaching-entry">
+  <h2><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
+  <p class="teaching-entry__meta">
+    {%- if item.data.semester -%}{{ item.data.semester }} · {% endif -%}
+    {%- if item.data.venue -%}{{ item.data.venue }}{%- endif -%}
+    {%- if item.data.location -%}, {{ item.data.location }}{%- endif -%}
+  </p>
+  <div class="teaching-entry__content">
+    {{ item.templateContent | safe }}
+  </div>
+  <hr />
+</article>
+{%- endfor -%}

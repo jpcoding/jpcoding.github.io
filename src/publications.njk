@@ -1,0 +1,77 @@
+---
+layout: "base.njk"
+title: "Publications"
+description: "Selected publications and preprints grouped by venue type."
+eleventyNavigation:
+  key: Publications
+---
+
+<p class="page-lede">Peer-reviewed papers and preprints covering error-bounded lossy compression, quantity-of-interest preservation, and large-scale HPC systems.</p>
+
+{% if metadata.author.scholar %}
+<p>You can also follow new work on <a href="{{ metadata.author.scholar }}" target="_blank" rel="noopener">Google Scholar</a>.</p>
+{% endif %}
+
+{% set publications = collections.publications | reverse %}
+
+{% if globalData.publicationCategories %}
+  {% for category in globalData.publicationCategories %}
+    {% set hasEntries = false %}
+    {% for pub in publications %}
+      {% if pub.data.category == category.key %}
+        {% if hasEntries == false %}
+          {% set hasEntries = true %}
+          <h2>{{ category.title }}</h2>
+          <hr />
+        {% endif %}
+        <article class="publication-entry">
+          <h3><a href="{{ pub.url }}">{{ pub.data.title }}</a></h3>
+          <p class="publication-entry__meta">
+            {% if pub.data.venue %}{{ pub.data.venue }} · {% endif %}
+            {% if pub.date %}{{ pub.date | postDate }}{% endif %}
+          </p>
+          {% if pub.data.authors %}<p class="publication-entry__authors">{{ pub.data.authors }}</p>{% endif %}
+          {% if pub.data.excerpt %}<p class="publication-entry__excerpt">{{ pub.data.excerpt | safe }}</p>{% endif %}
+        </article>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+
+  {% set fallbackRendered = false %}
+  {% for pub in publications %}
+    {% set categorized = false %}
+    {% for category in globalData.publicationCategories %}
+      {% if pub.data.category == category.key %}
+        {% set categorized = true %}
+      {% endif %}
+    {% endfor %}
+    {% if categorized == false %}
+      {% if fallbackRendered == false %}
+        {% set fallbackRendered = true %}
+        <h2>Other Publications</h2>
+        <hr />
+      {% endif %}
+      <article class="publication-entry">
+        <h3><a href="{{ pub.url }}">{{ pub.data.title }}</a></h3>
+        <p class="publication-entry__meta">
+          {% if pub.data.venue %}{{ pub.data.venue }} · {% endif %}
+          {% if pub.date %}{{ pub.date | postDate }}{% endif %}
+        </p>
+        {% if pub.data.authors %}<p class="publication-entry__authors">{{ pub.data.authors }}</p>{% endif %}
+        {% if pub.data.excerpt %}<p class="publication-entry__excerpt">{{ pub.data.excerpt | safe }}</p>{% endif %}
+      </article>
+    {% endif %}
+  {% endfor %}
+{% else %}
+  {% for pub in publications %}
+    <article class="publication-entry">
+      <h3><a href="{{ pub.url }}">{{ pub.data.title }}</a></h3>
+      <p class="publication-entry__meta">
+        {% if pub.data.venue %}{{ pub.data.venue }} · {% endif %}
+        {% if pub.date %}{{ pub.date | postDate }}{% endif %}
+      </p>
+      {% if pub.data.authors %}<p class="publication-entry__authors">{{ pub.data.authors }}</p>{% endif %}
+      {% if pub.data.excerpt %}<p class="publication-entry__excerpt">{{ pub.data.excerpt | safe }}</p>{% endif %}
+    </article>
+  {% endfor %}
+{% endif %}

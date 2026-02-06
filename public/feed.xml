@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://jpcoding.github.io/">
+	<title>Pu Jiao — PhD Candidate</title>
+	<subtitle>High-performance computing researcher focusing on error-bounded lossy compression and large-scale systems.</subtitle>
+	<link href="https://jpcoding.github.io/feed.xml" rel="self"/>
+	<link href="https://jpcoding.github.io/"/>
+	<updated>2026-02-06T18:58:58Z</updated>
+	<id>https://jpcoding.github.io/</id>
+	<author>
+		<name>Pu Jiao</name>
+		<email>jiaopujp@gmail.com</email>
+	</author>
+	
+	<entry>
+		<title>Blog Post number 4</title>
+		<link href="https://jpcoding.github.io/posts/2012/08/blog-post-4/"/>
+		<updated>2015-08-14T00:00:00Z</updated>
+		<id>https://jpcoding.github.io/posts/2012/08/blog-post-4/</id>
+		<content type="html">&lt;p&gt;This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.&lt;/p&gt;
+&lt;h1 id=&quot;headings-are-cool&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2012/08/blog-post-4/#headings-are-cool&quot;&gt;Headings are cool&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id=&quot;you-can-have-many-headings&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2012/08/blog-post-4/#you-can-have-many-headings&quot;&gt;You can have many headings&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id=&quot;aren%E2%80%99t-headings-cool%3F&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2012/08/blog-post-4/#aren%E2%80%99t-headings-cool%3F&quot;&gt;Aren’t headings cool?&lt;/a&gt;&lt;/h2&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Blog Post number 3</title>
+		<link href="https://jpcoding.github.io/posts/2014/08/blog-post-3/"/>
+		<updated>2014-08-14T00:00:00Z</updated>
+		<id>https://jpcoding.github.io/posts/2014/08/blog-post-3/</id>
+		<content type="html">&lt;p&gt;This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.&lt;/p&gt;
+&lt;h1 id=&quot;headings-are-cool&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2014/08/blog-post-3/#headings-are-cool&quot;&gt;Headings are cool&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id=&quot;you-can-have-many-headings&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2014/08/blog-post-3/#you-can-have-many-headings&quot;&gt;You can have many headings&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id=&quot;aren%E2%80%99t-headings-cool%3F&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2014/08/blog-post-3/#aren%E2%80%99t-headings-cool%3F&quot;&gt;Aren’t headings cool?&lt;/a&gt;&lt;/h2&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Blog Post number 2</title>
+		<link href="https://jpcoding.github.io/posts/2013/08/blog-post-2/"/>
+		<updated>2013-08-14T00:00:00Z</updated>
+		<id>https://jpcoding.github.io/posts/2013/08/blog-post-2/</id>
+		<content type="html">&lt;p&gt;This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.&lt;/p&gt;
+&lt;h1 id=&quot;headings-are-cool&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2013/08/blog-post-2/#headings-are-cool&quot;&gt;Headings are cool&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id=&quot;you-can-have-many-headings&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2013/08/blog-post-2/#you-can-have-many-headings&quot;&gt;You can have many headings&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id=&quot;aren%E2%80%99t-headings-cool%3F&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2013/08/blog-post-2/#aren%E2%80%99t-headings-cool%3F&quot;&gt;Aren’t headings cool?&lt;/a&gt;&lt;/h2&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Blog Post number 1</title>
+		<link href="https://jpcoding.github.io/posts/2012/08/blog-post-1/"/>
+		<updated>2012-08-14T00:00:00Z</updated>
+		<id>https://jpcoding.github.io/posts/2012/08/blog-post-1/</id>
+		<content type="html">&lt;p&gt;This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.&lt;/p&gt;
+&lt;h1 id=&quot;headings-are-cool&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2012/08/blog-post-1/#headings-are-cool&quot;&gt;Headings are cool&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id=&quot;you-can-have-many-headings&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2012/08/blog-post-1/#you-can-have-many-headings&quot;&gt;You can have many headings&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id=&quot;aren%E2%80%99t-headings-cool%3F&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2012/08/blog-post-1/#aren%E2%80%99t-headings-cool%3F&quot;&gt;Aren’t headings cool?&lt;/a&gt;&lt;/h2&gt;
+</content>
+	</entry>
+</feed>

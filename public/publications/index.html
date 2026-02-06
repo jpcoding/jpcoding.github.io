@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/a11y-code.css">
+  <link rel="icon" type="image/png" sizes="96x96" href="https://11ty.dev/img/favicon.png">
+  <!-- add your favicons here -->
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png"> -->
+  
+  <style>
+  	:root{--white:#fafafa;--black:#191919;--gray:#212121;--gray-2:#a6a6a6;--blue:#0070ff;--blue-2:#61dcff;--ff-sans-serif:Roboto,Helvetica,sans-serif;--ff-serif:Garamond,serif;--ff-code:monospace}*{box-sizing:border-box}body{--clr-background:var(--white);--clr-text:var(--black);--clr-text-secondary:var(--gray-2);--clr-link:var(--blue);--ff-current:var(--ff-sans-serif);background:var(--clr-background);color:var(--clr-text);font-family:var(--ff-current);padding:12px;line-height:1.5rem}body.dark{--clr-background:var(--black);--clr-text:var(--white);--clr-link:var(--blue-2)}.main-container{max-width:1200px;margin:auto;display:grid;grid-template-columns:1fr 3fr 1fr;gap:3rem}main{min-height:86vh;padding-top:20px}.side-nav{text-align:end;line-height:2rem}.side-nav .site-title{all:unset}.side-nav .site-title:hover{all:unset;cursor:pointer}.side-nav a{all:unset;padding:8px;cursor:pointer}.side-nav a.active,.side-nav a:hover{background:var(--clr-text);color:var(--clr-background)}.side-nav ul{list-style:none}.side-nav ul li{margin:.5rem 0}.side-nav-inner{padding:20px;position:sticky;top:0}a{color:var(--clr-link)}.breadcrumbs{margin-bottom:1rem}article h1{font-size:2rem;line-height:2.5rem}article h1>a,article h2>a,article h3>a{color:var(--clr-text);text-decoration:none}article a:hover{color:var(--clr-link)}article img{max-width:100%}.thumbnail-container img{max-width:100%}.post-entries{padding:0;list-style:none}.post-entry{margin-bottom:4rem}.post-entry__title a{color:var(--clr-text)}.post-entry__title a:hover{color:var(--clr-link)}.post-entry__date{color:var(--clr-text-secondary)}.bibliography ul{padding:0;list-style:none}.bibliography li{padding-left:3rem;text-indent:-3rem;text-align:left;margin:1rem 0 .2rem 0}.main-footer{text-align:center;margin-top:4rem}.cv-intro{display:flex;flex-direction:column;gap:1rem;padding:1.5rem;background:#f5f5f5;border-radius:8px}.cv-contact{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.5rem 1.5rem}.cv-contact a{color:inherit;text-decoration:underline}.cv-grid{margin-top:1.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}.cv-card{border:1px solid #e2e2e2;border-radius:8px;padding:1.25rem;background:#fff}.cv-pill-list{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem}.cv-pill-list li{padding:.35rem .75rem;border-radius:999px;background:#efefef;font-size:.9rem}.cv-download{font-weight:700}.cv-section{margin-top:2.5rem}.cv-section h2{margin-bottom:1rem}.cv-timeline{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:1.5rem}.cv-timeline__date{font-size:.85rem;color:var(--clr-text-secondary);display:block;margin-bottom:.4rem}.cv-publication-list{padding-left:1.25rem}.cv-publication-list li{margin-bottom:.6rem}.cv-teaching-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.75rem}.cv-teaching-list li{display:flex;justify-content:space-between;flex-wrap:wrap;border-bottom:1px solid #eaeaea;padding-bottom:.35rem}.cv-teaching-list span{color:var(--clr-text-secondary)}.post-author{display:none}code{font-size:1.1em}pre{font-size:1em;overflow-x:auto;font-family:var(--ff-code);padding:12px;display:grid}pre code{overflow-x:auto}select{padding:2px;border:1px solid var(--clr-text);background-color:var(--clr-background);color:var(--clr-text);font-size:1em}button{padding:4px;border:1px solid var(--clr-text);color:var(--clr-text);background-color:transparent;cursor:pointer}.side-nav .controls{margin-top:2rem}@media (max-width:1200px){.main-container{grid-template-columns:1fr 3fr}}@media (max-width:720px){.main-container{grid-template-columns:1fr}.cv-teaching-list li{flex-direction:column;gap:.2rem}}@media print{body.dark{--clr-background:#fff;--clr-text:#000;--clr-link:var(--blue)}.side-nav{display:none}.main-footer{display:none}.post-author{display:block}}
+  </style>
+  <meta property="og:title" content="Publications">
+  <meta property="og:image" content="">
+  <meta property="og:description" content="Selected publications and preprints grouped by venue type.">
+  <meta name="description" content="Selected publications and preprints grouped by venue type.">
+  <meta name="theme-color" content="#0f0f11">
+  <title>Publications | Pu Jiao — PhD Candidate</title>
+</head>
+
+  <body>
+    <div class="main-container">
+      <aside class="side-nav">
+        <div class="side-nav-inner">
+          <a class="site-title" href="/">
+            Pu Jiao — PhD Candidate
+          </a>
+          <nav>
+  <ul><li>
+        <a
+          class="nav-link
+            
+              
+            
+          "
+          href="/"
+        > Home</a>
+      </li><li>
+        <a
+          class="nav-link
+            
+               active 
+            
+          "
+          href="/publications/"
+        > Publications</a>
+      </li><li>
+        <a
+          class="nav-link
+            
+              
+            
+          "
+          href="/teaching/"
+        > Teaching</a>
+      </li><li>
+        <a
+          class="nav-link
+            
+              
+            
+          "
+          href="/cv/"
+        > CV</a>
+      </li><li>
+        <a
+          class="nav-link
+            
+              
+            
+          "
+          href="/feed.xml"
+        > RSS</a>
+      </li></ul>
+</nav>
+
+          <div class="controls">
+            <details>
+              <summary>Controls</summary>
+              <div>
+  <label for="theme">Theme</label>
+  <select name="theme" id="theme">
+    <option value="system">system</option>
+    <option value="light">light</option>
+    <option value="dark">dark</option>
+  </select>
+</div>
+
+              <div>
+  <label for="font">Font</label>
+  <select name="font" id="font">
+    <option value="sansSerif">sans-serif</option>
+    <option value="serif">serif</option>
+  </select>
+</div>
+
+              <div>
+                <button onclick="print()">Print this page</button>
+              </div>
+            </details>
+          </div>
+        </div>
+      </aside>
+      <main>
+        
+<p class="page-lede">Peer-reviewed papers and preprints covering error-bounded lossy compression, quantity-of-interest preservation, and large-scale HPC systems.</p>
+
+
+<p>You can also follow new work on <a href="https://scholar.google.com/citations?user=6blhwnoAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
+
+
+
+
+
+  
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+    
+    
+      
+        
+          
+          <h2>Conference Papers</h2>
+          <hr />
+        
+        <article class="publication-entry">
+          <h3><a href="/publications/ipdps26_posterization-mitigation/">Mitigating Artifacts in Pre-quantization Based Scientific Data Compressors with Quantization-aware Interpolation</a></h3>
+          <p class="publication-entry__meta">
+            IPDPS · 
+            Apr 30, 2026
+          </p>
+          <p class="publication-entry__authors">Jiao, Pu; Di, Sheng; Tian, Jiannan; Xia,Mingze; Wu, Xuan; Zhang,Yang; Liang, Xin; Cappello, Franck</p>
+          <p class="publication-entry__excerpt">Posterization artifact mitgation [Paper Link Pending] </p>
+        </article>
+      
+    
+      
+        
+        <article class="publication-entry">
+          <h3><a href="/publications/qpet-vldb25/">QPET: A Versatile and Portable Quantity-of-Interest-Preservation Framework for Error-Bounded Lossy Compression</a></h3>
+          <p class="publication-entry__meta">
+            VLDB · 
+            Dec 31, 2024
+          </p>
+          <p class="publication-entry__authors">Liu, Jinyang*, Jiao, Pu*, Zhao, Kai, Liang, Xin, Di, Sheng, Cappello, Franck (*Equal contribution)</p>
+          <p class="publication-entry__excerpt">A framework for preserving QoIs (quantities of interest) in error-bounded lossy compression. [Paper Link](https://dl.acm.org/doi/10.14778/3742728.3742739)</p>
+        </article>
+      
+    
+      
+        
+        <article class="publication-entry">
+          <h3><a href="/publications/ipdps25-aqip/">Improving the Efficiency of Interpolation-Based Scientific Data Compressors with Adaptive Quantization Index Prediction</a></h3>
+          <p class="publication-entry__meta">
+            IPDPS · 
+            Dec 31, 2024
+          </p>
+          <p class="publication-entry__authors">Jiao, Pu; Di, Sheng; Xia, Mingze; Wu, Xuan; Liu, Jinyang; Liang, Xin; Cappello, Franck</p>
+          <p class="publication-entry__excerpt">Adaptive quantization index prediction improves interpolation-based scientific compressors. [Paper Link](https://ieeexplore.ieee.org/document/11078527) </p>
+        </article>
+      
+    
+      
+        
+        <article class="publication-entry">
+          <h3><a href="/publications/hipc23-artifacts/">Characterization and Detection of Artifacts for Error-Controlled Lossy Compressors</a></h3>
+          <p class="publication-entry__meta">
+            HiPC · 
+            Dec 31, 2022
+          </p>
+          <p class="publication-entry__authors">Jiao, Pu; Di, Sheng; Liu, Jinyang; Liang, Xin; Cappello, Franck</p>
+          <p class="publication-entry__excerpt">Characterizes artifacts and detection for error-controlled lossy compressors. [Paper Link](https://ieeexplore.ieee.org/document/10487052)</p>
+        </article>
+      
+    
+      
+        
+        <article class="publication-entry">
+          <h3><a href="/publications/vldb22-qoi/">Toward Quantity-of-Interest Preserving Lossy Compression for Scientific Data</a></h3>
+          <p class="publication-entry__meta">
+            VLDB · 
+            Nov 30, 2022
+          </p>
+          <p class="publication-entry__authors">Jiao, Pu; Di, Sheng; Guo, Hanqi; Zhao, Kai; Tian, Jiannan; Tao, Dingwen; Liang, Xin; Cappello, Franck</p>
+          <p class="publication-entry__excerpt">Toward QoI-preserving lossy compression for scientific data. [Paper Link](https://dl.acm.org/doi/10.14778/3574245.3574255)</p>
+        </article>
+      
+    
+  
+
+  
+  
+    
+    
+      
+    
+      
+    
+      
+        
+      
+    
+    
+  
+    
+    
+      
+    
+      
+    
+      
+        
+      
+    
+    
+  
+    
+    
+      
+    
+      
+    
+      
+        
+      
+    
+    
+  
+    
+    
+      
+    
+      
+    
+      
+        
+      
+    
+    
+  
+    
+    
+      
+    
+      
+    
+      
+        
+      
+    
+    
+  
+
+
+      </main>
+    </div>
+    <footer class="main-footer">
+  &copy; Pu Jiao 2026
+</footer>
+
+  </body>
+  
+  <script>
+  function initThemeHandler(){const e=document.querySelector('select[id="theme"]'),t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light",o=localStorage.getItem("theme"),n=document.querySelector('meta[name="theme-color"]'),a=getComputedStyle(document.body);function r(e){"dark"===e?document.body.classList.add("dark"):document.body.classList.remove("dark");const t=a.getPropertyValue("--clr-background");n.setAttribute("content",t)}e.value=o||"system",r("dark"===o||"light"===o?o:t),e.addEventListener("change",(()=>{"system"===e.value?r(t):r(e.value),localStorage.setItem("theme",e.value)}))}function initFontHandler(){const e=getComputedStyle(document.body),t=e.getPropertyValue("--ff-sans-serif"),o=e.getPropertyValue("--ff-serif"),n=localStorage.getItem("font"),a=document.querySelector('select[id="font"]');function r(e){document.body.style.fontFamily="serif"===e?o:t}"serif"===n&&(r(n),a.value=n),a.addEventListener("change",(()=>{r(a.value),localStorage.setItem("font",a.value)}))}initThemeHandler(),initFontHandler();
+  </script>
+</html>

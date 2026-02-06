@@ -1,0 +1,130 @@
+---
+layout: "base.njk"
+title: "Curriculum Vitae"
+description: "Snapshot of experience, education, and selected accomplishments."
+eleventyNavigation:
+  key: CV
+templateEngineOverride: "njk,md"
+eleventyExcludeFromCollections: true
+---
+
+<section class="cv-intro">
+  <div>
+    <p>
+      PhD candidate in Computer Science at the University of Kentucky specializing in
+      high-performance computing, error-bounded lossy compression, and data-intensive
+      system optimization.
+    </p>
+  </div>
+  <ul class="cv-contact">
+    <li><strong>Location:</strong> Lexington, KY, USA</li>
+    <li><strong>Email:</strong> <a href="mailto:jiaopujp@gmail.com">jiaopujp@gmail.com</a></li>
+    <li><strong>Web:</strong> <a href="https://jpcoding.github.io/">jpcoding.github.io</a></li>
+    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pu-jiao-4b309b212/">pu-jiao-4b309b212</a></li>
+  </ul>
+</section>
+
+<div class="cv-grid">
+  <section class="cv-card">
+    <h3>Technical Strengths</h3>
+    <ul class="cv-pill-list">
+      <li>HPC & MPI/OpenMP/CUDA</li>
+      <li>Error-bounded compression</li>
+      <li>Performance modeling</li>
+      <li>Parallel algorithms</li>
+      <li>Python · C++ · CUDA</li>
+      <li>Scientific data systems</li>
+    </ul>
+  </section>
+  <section class="cv-card">
+    <h3>Research Interests</h3>
+    <p>High-performance computing, quantity-of-interest preservation, storage-efficient analytics, compression artifacts mitigation, and scalable data services.</p>
+  </section>
+  <section class="cv-card">
+    <h3>Download</h3>
+    <p><a class="cv-download" href="/files/cv.pdf">Download the detailed CV (PDF)</a></p>
+  </section>
+</div>
+
+<section class="cv-section">
+  <h2>Education</h2>
+  <ul class="cv-timeline">
+    <li>
+      <span class="cv-timeline__date">2019–2026 (exp.)</span>
+      <div>
+        <strong>Ph.D., Computer Science</strong> — University of Kentucky
+        <p>Research on error-bounded lossy compression, QoI preservation, and large-scale runtime optimization.</p>
+      </div>
+    </li>
+    <li>
+      <span class="cv-timeline__date">2014–2016</span>
+      <div>
+        <strong>M.S., Civil Engineering</strong> — Missouri University of Science and Technology
+      </div>
+    </li>
+    <li>
+      <span class="cv-timeline__date">2010–2014</span>
+      <div>
+        <strong>B.Eng., Civil Engineering</strong> — Xi'an Jiaotong University
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="cv-section">
+  <h2>Selected Experience</h2>
+  <ul class="cv-timeline">
+    <li>
+      <span class="cv-timeline__date">2023–Present</span>
+      <div>
+        <strong>Graduate Research Assistant</strong>, University of Kentucky
+        <p>Developing quantization-aware interpolation, artifact mitigation techniques, and QoI-preserving compressors deployed on leadership-class HPC systems.</p>
+      </div>
+    </li>
+    <li>
+      <span class="cv-timeline__date">2022–2024</span>
+      <div>
+        <strong>Graduate Teaching Assistant</strong>, CS218 / CS216
+        <p>Designed labs, mentored 40+ students per term, and delivered stand-in lectures on advanced programming interfaces and systems.</p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="cv-section">
+  <h2>Selected Publications</h2>
+  {% set count = 0 %}
+  <ol class="cv-publication-list">
+  {%- for pub in collections.publications | reverse -%}
+    {% if count < 5 %}
+      <li>
+        <strong>{{ pub.data.venue }}</strong> — <a href="{{ pub.url }}">{{ pub.data.title }}</a>
+      </li>
+      {% set count = count + 1 %}
+    {% endif %}
+  {%- endfor -%}
+  </ol>
+</section>
+
+<section class="cv-section">
+  <h2>Teaching & Mentorship</h2>
+  <ul class="cv-teaching-list">
+  {%- for course in collections.teaching | reverse -%}
+    <li>
+      <div>
+        <strong>{{ course.data.title }}</strong> — {{ course.data.semester }}
+      </div>
+      <span>{{ course.data.venue }}</span>
+    </li>
+  {%- endfor -%}
+  </ul>
+</section>
+
+<section class="cv-section">
+  <h2>Service & Leadership</h2>
+  <ul>
+    <li>Reviewer for HPC, compression, and systems venues (IPDPS, SC workshops, HiPC).</li>
+    <li>Contributor to open-source scientific workflows and compression evaluation tooling.</li>
+    <li>Volunteer mentor for undergraduate research projects in data analytics.</li>
+  </ul>
+</section>

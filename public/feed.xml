@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://jpcoding.github.io/">
-	<title>Pu Jiao — PhD Candidate</title>
+	<title>Pu Jiao</title>
 	<subtitle>High-performance computing researcher focusing on error-bounded lossy compression and large-scale systems.</subtitle>
 	<link href="https://jpcoding.github.io/feed.xml" rel="self"/>
 	<link href="https://jpcoding.github.io/"/>
-	<updated>2026-02-06T18:58:58Z</updated>
+	<updated>2026-02-06T19:34:03Z</updated>
 	<id>https://jpcoding.github.io/</id>
 	<author>
 		<name>Pu Jiao</name>
-		<email>jiaopujp@gmail.com</email>
 	</author>
 	
 	<entry>

@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Pu Jiao — PhD Candidate"
+title                    : "Pu Jiao"
 title_separator          : "-"
 name                     : &name "Pu Jiao"
 description              : &description "PhD Candidate in Computer Science at the University of Kentucky"

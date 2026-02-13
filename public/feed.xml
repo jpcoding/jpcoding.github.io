@@ -1,60 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://jpcoding.github.io/">
-	<title>Pu Jiao</title>
+	<title>Pu Jiao — PhD Candidate</title>
 	<subtitle>High-performance computing researcher focusing on error-bounded lossy compression and large-scale systems.</subtitle>
 	<link href="https://jpcoding.github.io/feed.xml" rel="self"/>
 	<link href="https://jpcoding.github.io/"/>
-	<updated>2026-02-06T19:34:03Z</updated>
+	<updated>2026-02-13T18:38:19Z</updated>
 	<id>https://jpcoding.github.io/</id>
 	<author>
 		<name>Pu Jiao</name>
 	</author>
 	
 	<entry>
-		<title>Blog Post number 4</title>
-		<link href="https://jpcoding.github.io/posts/2012/08/blog-post-4/"/>
-		<updated>2015-08-14T00:00:00Z</updated>
-		<id>https://jpcoding.github.io/posts/2012/08/blog-post-4/</id>
-		<content type="html">&lt;p&gt;This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.&lt;/p&gt;
-&lt;h1 id=&quot;headings-are-cool&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2012/08/blog-post-4/#headings-are-cool&quot;&gt;Headings are cool&lt;/a&gt;&lt;/h1&gt;
-&lt;h1 id=&quot;you-can-have-many-headings&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2012/08/blog-post-4/#you-can-have-many-headings&quot;&gt;You can have many headings&lt;/a&gt;&lt;/h1&gt;
-&lt;h2 id=&quot;aren%E2%80%99t-headings-cool%3F&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2012/08/blog-post-4/#aren%E2%80%99t-headings-cool%3F&quot;&gt;Aren’t headings cool?&lt;/a&gt;&lt;/h2&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Blog Post number 3</title>
-		<link href="https://jpcoding.github.io/posts/2014/08/blog-post-3/"/>
-		<updated>2014-08-14T00:00:00Z</updated>
-		<id>https://jpcoding.github.io/posts/2014/08/blog-post-3/</id>
-		<content type="html">&lt;p&gt;This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.&lt;/p&gt;
-&lt;h1 id=&quot;headings-are-cool&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2014/08/blog-post-3/#headings-are-cool&quot;&gt;Headings are cool&lt;/a&gt;&lt;/h1&gt;
-&lt;h1 id=&quot;you-can-have-many-headings&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2014/08/blog-post-3/#you-can-have-many-headings&quot;&gt;You can have many headings&lt;/a&gt;&lt;/h1&gt;
-&lt;h2 id=&quot;aren%E2%80%99t-headings-cool%3F&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2014/08/blog-post-3/#aren%E2%80%99t-headings-cool%3F&quot;&gt;Aren’t headings cool?&lt;/a&gt;&lt;/h2&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Blog Post number 2</title>
-		<link href="https://jpcoding.github.io/posts/2013/08/blog-post-2/"/>
-		<updated>2013-08-14T00:00:00Z</updated>
-		<id>https://jpcoding.github.io/posts/2013/08/blog-post-2/</id>
-		<content type="html">&lt;p&gt;This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.&lt;/p&gt;
-&lt;h1 id=&quot;headings-are-cool&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2013/08/blog-post-2/#headings-are-cool&quot;&gt;Headings are cool&lt;/a&gt;&lt;/h1&gt;
-&lt;h1 id=&quot;you-can-have-many-headings&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2013/08/blog-post-2/#you-can-have-many-headings&quot;&gt;You can have many headings&lt;/a&gt;&lt;/h1&gt;
-&lt;h2 id=&quot;aren%E2%80%99t-headings-cool%3F&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2013/08/blog-post-2/#aren%E2%80%99t-headings-cool%3F&quot;&gt;Aren’t headings cool?&lt;/a&gt;&lt;/h2&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Blog Post number 1</title>
-		<link href="https://jpcoding.github.io/posts/2012/08/blog-post-1/"/>
-		<updated>2012-08-14T00:00:00Z</updated>
-		<id>https://jpcoding.github.io/posts/2012/08/blog-post-1/</id>
-		<content type="html">&lt;p&gt;This is a sample blog post. Lorem ipsum I can’t remember the rest of lorem ipsum and don’t have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.&lt;/p&gt;
-&lt;h1 id=&quot;headings-are-cool&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2012/08/blog-post-1/#headings-are-cool&quot;&gt;Headings are cool&lt;/a&gt;&lt;/h1&gt;
-&lt;h1 id=&quot;you-can-have-many-headings&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2012/08/blog-post-1/#you-can-have-many-headings&quot;&gt;You can have many headings&lt;/a&gt;&lt;/h1&gt;
-&lt;h2 id=&quot;aren%E2%80%99t-headings-cool%3F&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2012/08/blog-post-1/#aren%E2%80%99t-headings-cool%3F&quot;&gt;Aren’t headings cool?&lt;/a&gt;&lt;/h2&gt;
+		<title>&quot;Tethering&quot; Over ADB</title>
+		<link href="https://jpcoding.github.io/posts/2026-02-13-adb-tethering"/>
+		<updated>2026-02-13T00:00:00Z</updated>
+		<id>https://jpcoding.github.io/posts/2026-02-13-adb-tethering</id>
+		<content type="html">&lt;p&gt;If you have an Android phone with WiFi 6E and a Mac that doesn’t support 6GHz WiFi, this guide shows how to use ADB and SOCKS5 to route your Mac’s traffic through your phone’s faster 6GHz connection—no root or kernel extensions required.&lt;/p&gt;
+&lt;h2 id=&quot;background&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2026-02-13-adb-tethering#background&quot;&gt;Background&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;It all starts with my internet problem on campus. I noticed that our WiFi connection only allows 20MHz for 5GHz WiFi, which impacts both WiFi 5 and WiFi 6 devices. This policy locks the connection speed to 286Mbps. However, I found out they also enabled WiFi 6E 6GHz and it has a higher cap than 5GHz. If I need faster WiFi, I have to get on 6GHz, but my MacBook Pro 2021 does not support 6GHz.&lt;/p&gt;
+&lt;h2 id=&quot;the-solution-stack&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2026-02-13-adb-tethering#the-solution-stack&quot;&gt;The Solution Stack&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Here’s how the connection flows:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs&quot;&gt;Mac (Browser) → SOCKS5 Proxy (127.0.0.1:1080)
+                      ↓
+                  ADB (USB)
+                      ↓
+            Termux/microsocks (Phone)
+                      ↓
+            WiFi 6E 6GHz (Phone)
+                      ↓
+                  Internet
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;the-wifi-6e-android-phone&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2026-02-13-adb-tethering#the-wifi-6e-android-phone&quot;&gt;The WiFi 6E Android Phone&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Luckily, I have a Moto G Stylus 5G (2024) that supports WiFi 6E, but its USB tethering is locked to &lt;strong&gt;RNDIS&lt;/strong&gt; by the manufacturer ROM. &lt;strong&gt;RNDIS&lt;/strong&gt; is supported by Linux and Windows. It was supported on macOS through a third-party project &lt;a href=&quot;https://github.com/TomHeaven/HoRNDIS&quot;&gt;HoRNDIS&lt;/a&gt;, but it is not usable on Apple Silicon MacBooks.&lt;/p&gt;
+&lt;h2 id=&quot;adb-and-socks5&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2026-02-13-adb-tethering#adb-and-socks5&quot;&gt;ADB and SOCKS5&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;This leads us to a network workaround. Wired &lt;strong&gt;ADB&lt;/strong&gt; provides a stable USB data channel, and a &lt;strong&gt;SOCKS5&lt;/strong&gt; proxy running on the phone can redirect the Mac’s traffic through the phone’s 6GHz connection.&lt;/p&gt;
+&lt;h3 id=&quot;prerequisites&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2026-02-13-adb-tethering#prerequisites&quot;&gt;Prerequisites&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://termux.dev&quot;&gt;Termux&lt;/a&gt; installed on the Android phone&lt;/li&gt;
+&lt;li&gt;ADB installed on the Mac (&lt;code&gt;brew install android-platform-tools&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;USB debugging enabled on the phone (Settings → Developer Options → USB Debugging)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;microsocks&lt;/code&gt; installed in Termux:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs language-bash&quot;&gt;pkg install microsocks
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;step-1%3A-start-the-socks5-proxy-on-the-phone&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2026-02-13-adb-tethering#step-1%3A-start-the-socks5-proxy-on-the-phone&quot;&gt;Step 1: Start the SOCKS5 Proxy on the Phone&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;In Termux, start &lt;code&gt;microsocks&lt;/code&gt; on port 1080:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs language-bash&quot;&gt;microsocks -p 1080
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To prevent Android from killing Termux when the screen locks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Settings → Apps → Termux → Battery → &lt;strong&gt;Unrestricted&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Pull down the Termux notification → tap &lt;strong&gt;Acquire wakelock&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;step-2%3A-forward-the-port-via-adb-on-the-mac&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2026-02-13-adb-tethering#step-2%3A-forward-the-port-via-adb-on-the-mac&quot;&gt;Step 2: Forward the Port via ADB on the Mac&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;ADB forward maps a local Mac port to the port running on the phone over USB:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs language-bash&quot;&gt;adb forward tcp:1080 tcp:1080
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Since ADB forward can drop when the screen locks or USB is interrupted, use this loop to keep it alive:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs language-bash&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;; &lt;span class=&quot;hljs-keyword&quot;&gt;do&lt;/span&gt;
+    adb forward tcp:1080 tcp:1080
+    &lt;span class=&quot;hljs-built_in&quot;&gt;sleep&lt;/span&gt; 3
+&lt;span class=&quot;hljs-keyword&quot;&gt;done&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;step-3%3A-configure-the-browser-for-isolated-test&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2026-02-13-adb-tethering#step-3%3A-configure-the-browser-for-isolated-test&quot;&gt;Step 3: Configure the Browser for Isolated Test&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;In Firefox:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Settings → search &lt;strong&gt;proxy&lt;/strong&gt; → &lt;strong&gt;Settings…&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Select &lt;strong&gt;Manual proxy configuration&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;SOCKS Host: &lt;code&gt;127.0.0.1&lt;/code&gt;, Port: &lt;code&gt;1080&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Select &lt;strong&gt;SOCKS v5&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Check &lt;strong&gt;Proxy DNS when using SOCKS v5&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click OK&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;results&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;https://jpcoding.github.io/posts/2026-02-13-adb-tethering#results&quot;&gt;Results&lt;/a&gt;&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Download&lt;/th&gt;
+&lt;th&gt;Upload&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Campus WiFi (5GHz)&lt;/td&gt;
+&lt;td&gt;191 Mbps&lt;/td&gt;
+&lt;td&gt;186 Mbps&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;This setup (6GHz via ADB)&lt;/td&gt;
+&lt;td&gt;285 Mbps&lt;/td&gt;
+&lt;td&gt;247 Mbps&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;A ~50% improvement in download and ~33% in upload, all over a USB cable with no root or kernel extensions required. And it is also easy to route the system connection to SOCKS5 in system settings.&lt;/p&gt;
 </content>
 	</entry>
 </feed>

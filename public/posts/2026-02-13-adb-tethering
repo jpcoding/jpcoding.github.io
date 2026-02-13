@@ -16,12 +16,12 @@
   <style>
   	:root{--white:#fafafa;--black:#191919;--gray:#212121;--gray-2:#a6a6a6;--blue:#0070ff;--blue-2:#61dcff;--ff-sans-serif:Roboto,Helvetica,sans-serif;--ff-serif:Garamond,serif;--ff-code:monospace}*{box-sizing:border-box}body{--clr-background:var(--white);--clr-text:var(--black);--clr-text-secondary:var(--gray-2);--clr-link:var(--blue);--ff-current:var(--ff-sans-serif);background:var(--clr-background);color:var(--clr-text);font-family:var(--ff-current);padding:12px;line-height:1.5rem}body.dark{--clr-background:var(--black);--clr-text:var(--white);--clr-link:var(--blue-2)}.main-container{max-width:1200px;margin:auto;display:grid;grid-template-columns:1fr 3fr 1fr;gap:3rem}main{min-height:86vh;padding-top:20px}.side-nav{text-align:end;line-height:2rem}.side-nav .site-title{all:unset}.side-nav .site-title:hover{all:unset;cursor:pointer}.side-nav a{all:unset;padding:8px;cursor:pointer}.side-nav a.active,.side-nav a:hover{background:var(--clr-text);color:var(--clr-background)}.side-nav ul{list-style:none}.side-nav ul li{margin:.5rem 0}.side-nav-inner{padding:20px;position:sticky;top:0}a{color:var(--clr-link)}.breadcrumbs{margin-bottom:1rem}article h1{font-size:2rem;line-height:2.5rem}article h1>a,article h2>a,article h3>a{color:var(--clr-text);text-decoration:none}article a:hover{color:var(--clr-link)}article img{max-width:100%}.thumbnail-container img{max-width:100%}.post-entries{padding:0;list-style:none}.post-entry{margin-bottom:4rem}.post-entry__title a{color:var(--clr-text)}.post-entry__title a:hover{color:var(--clr-link)}.post-entry__date{color:var(--clr-text-secondary)}.bibliography ul{padding:0;list-style:none}.bibliography li{padding-left:3rem;text-indent:-3rem;text-align:left;margin:1rem 0 .2rem 0}.main-footer{text-align:center;margin-top:4rem}.cv-intro{display:flex;flex-direction:column;gap:1rem;padding:1.5rem;background:#f5f5f5;border-radius:8px}.cv-contact{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.5rem 1.5rem}.cv-contact a{color:inherit;text-decoration:underline}.cv-grid{margin-top:1.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}.cv-card{border:1px solid #e2e2e2;border-radius:8px;padding:1.25rem;background:#fff}.cv-pill-list{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem}.cv-pill-list li{padding:.35rem .75rem;border-radius:999px;background:#efefef;font-size:.9rem}.cv-download{font-weight:700}.cv-section{margin-top:2.5rem}.cv-section h2{margin-bottom:1rem}.cv-timeline{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:1.5rem}.cv-timeline__date{font-size:.85rem;color:var(--clr-text-secondary);display:block;margin-bottom:.4rem}.cv-publication-list{padding-left:1.25rem}.cv-publication-list li{margin-bottom:.6rem}.cv-teaching-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.75rem}.cv-teaching-list li{display:flex;justify-content:space-between;flex-wrap:wrap;border-bottom:1px solid #eaeaea;padding-bottom:.35rem}.cv-teaching-list span{color:var(--clr-text-secondary)}.post-author{display:none}code{font-size:1.1em}pre{font-size:1em;overflow-x:auto;font-family:var(--ff-code);padding:12px;display:grid}pre code{overflow-x:auto}select{padding:2px;border:1px solid var(--clr-text);background-color:var(--clr-background);color:var(--clr-text);font-size:1em}button{padding:4px;border:1px solid var(--clr-text);color:var(--clr-text);background-color:transparent;cursor:pointer}.side-nav .controls{margin-top:2rem}@media (max-width:1200px){.main-container{grid-template-columns:1fr 3fr}}@media (max-width:720px){.main-container{grid-template-columns:1fr}.cv-teaching-list li{flex-direction:column;gap:.2rem}}@media print{body.dark{--clr-background:#fff;--clr-text:#000;--clr-link:var(--blue)}.side-nav{display:none}.main-footer{display:none}.post-author{display:block}}
   </style>
-  <meta property="og:title" content="Teaching">
+  <meta property="og:title" content="&quot;Tethering&quot; Over ADB">
   <meta property="og:image" content="">
-  <meta property="og:description" content="Teaching experience, roles, and course details.">
-  <meta name="description" content="Teaching experience, roles, and course details.">
+  <meta property="og:description" content="">
+  <meta name="description" content="">
   <meta name="theme-color" content="#0f0f11">
-  <title>Teaching | Pu Jiao — PhD Candidate</title>
+  <title>&quot;Tethering&quot; Over ADB | Pu Jiao — PhD Candidate</title>
 </head>
 
   <body>
@@ -45,7 +45,7 @@
         <a
           class="nav-link
             
-              
+               active 
             
           "
           href="/posts/"
@@ -63,7 +63,7 @@
         <a
           class="nav-link
             
-               active 
+              
             
           "
           href="/teaching/"
@@ -118,43 +118,101 @@
       </aside>
       <main>
         
-<p class="page-lede">Highlights from teaching assistantships and instructional roles at the University of Kentucky.</p><article class="teaching-entry">
-  <h2><a href="/teaching/2026_cs218">CS218, Advanced Progmming and Operating System Interfaces</a></h2>
-  <p class="teaching-entry__meta">Spring 2026 · University of Kentucky, Computer Science, Lexington, KY</p>
-  <div class="teaching-entry__content">
-    <ul>
-<li>Led labs for three sections for 40+ students.</li>
-<li>Guided students through programming assignments and held regular office hours.</li>
-<li>Served as substitute lecturer for two weeks, delivering course lectures to the full class.</li>
-<li>Graded assignments and participated in TA meetings.</li>
-</ul>
 
-  </div>
-  <hr />
-</article><article class="teaching-entry">
-  <h2><a href="/teaching/cs218_cs218">CS218, Advanced Progmming and Operating System Interfaces</a></h2>
-  <p class="teaching-entry__meta">Fall 2025 · University of Kentucky, Computer Science, Lexington, KY</p>
-  <div class="teaching-entry__content">
-    <ul>
-<li>Led labs for three sections for 30+ students.</li>
-<li>Guided students through programming assignments and held regular office hours.</li>
-<li>Graded assignments and participated in TA meetings.</li>
+<article>
+    <h1>&quot;Tethering&quot; Over ADB</h1>
+    <div class="post-author">
+      by
+      <strong>
+        
+          Pu Jiao,
+        
+      </strong>
+    <span>Feb 12, 2026</span>
+    </div>
+    <p>If you have an Android phone with WiFi 6E and a Mac that doesn’t support 6GHz WiFi, this guide shows how to use ADB and SOCKS5 to route your Mac’s traffic through your phone’s faster 6GHz connection—no root or kernel extensions required.</p>
+<h2 id="background" tabindex="-1"><a class="header-anchor" href="#background">Background</a></h2>
+<p>It all starts with my internet problem on campus. I noticed that our WiFi connection only allows 20MHz for 5GHz WiFi, which impacts both WiFi 5 and WiFi 6 devices. This policy locks the connection speed to 286Mbps. However, I found out they also enabled WiFi 6E 6GHz and it has a higher cap than 5GHz. If I need faster WiFi, I have to get on 6GHz, but my MacBook Pro 2021 does not support 6GHz.</p>
+<h2 id="the-solution-stack" tabindex="-1"><a class="header-anchor" href="#the-solution-stack">The Solution Stack</a></h2>
+<p>Here’s how the connection flows:</p>
+<pre><code class="hljs">Mac (Browser) → SOCKS5 Proxy (127.0.0.1:1080)
+                      ↓
+                  ADB (USB)
+                      ↓
+            Termux/microsocks (Phone)
+                      ↓
+            WiFi 6E 6GHz (Phone)
+                      ↓
+                  Internet
+</code></pre>
+<h2 id="the-wifi-6e-android-phone" tabindex="-1"><a class="header-anchor" href="#the-wifi-6e-android-phone">The WiFi 6E Android Phone</a></h2>
+<p>Luckily, I have a Moto G Stylus 5G (2024) that supports WiFi 6E, but its USB tethering is locked to <strong>RNDIS</strong> by the manufacturer ROM. <strong>RNDIS</strong> is supported by Linux and Windows. It was supported on macOS through a third-party project <a href="https://github.com/TomHeaven/HoRNDIS">HoRNDIS</a>, but it is not usable on Apple Silicon MacBooks.</p>
+<h2 id="adb-and-socks5" tabindex="-1"><a class="header-anchor" href="#adb-and-socks5">ADB and SOCKS5</a></h2>
+<p>This leads us to a network workaround. Wired <strong>ADB</strong> provides a stable USB data channel, and a <strong>SOCKS5</strong> proxy running on the phone can redirect the Mac’s traffic through the phone’s 6GHz connection.</p>
+<h3 id="prerequisites" tabindex="-1"><a class="header-anchor" href="#prerequisites">Prerequisites</a></h3>
+<ul>
+<li><a href="https://termux.dev">Termux</a> installed on the Android phone</li>
+<li>ADB installed on the Mac (<code>brew install android-platform-tools</code>)</li>
+<li>USB debugging enabled on the phone (Settings → Developer Options → USB Debugging)</li>
+<li><code>microsocks</code> installed in Termux:</li>
 </ul>
-
-  </div>
-  <hr />
-</article><article class="teaching-entry">
-  <h2><a href="/teaching/cs216_2025">CS216, Introductin to Software Engineering Techniques</a></h2>
-  <p class="teaching-entry__meta">Spring 2025 · University of Kentucky, Computer Science, Lexington, KY</p>
-  <div class="teaching-entry__content">
-    <ul>
-<li>Led in-person lab sessions for two sections , guided students through programming assignments.</li>
-<li>Received “Excellent” ratings and 4.1-4.4/5 student evaluations for clarity and debugging assistance.</li>
+<pre><code class="hljs language-bash">pkg install microsocks
+</code></pre>
+<h3 id="step-1%3A-start-the-socks5-proxy-on-the-phone" tabindex="-1"><a class="header-anchor" href="#step-1%3A-start-the-socks5-proxy-on-the-phone">Step 1: Start the SOCKS5 Proxy on the Phone</a></h3>
+<p>In Termux, start <code>microsocks</code> on port 1080:</p>
+<pre><code class="hljs language-bash">microsocks -p 1080
+</code></pre>
+<p>To prevent Android from killing Termux when the screen locks:</p>
+<ul>
+<li>Settings → Apps → Termux → Battery → <strong>Unrestricted</strong></li>
+<li>Pull down the Termux notification → tap <strong>Acquire wakelock</strong></li>
 </ul>
+<h3 id="step-2%3A-forward-the-port-via-adb-on-the-mac" tabindex="-1"><a class="header-anchor" href="#step-2%3A-forward-the-port-via-adb-on-the-mac">Step 2: Forward the Port via ADB on the Mac</a></h3>
+<p>ADB forward maps a local Mac port to the port running on the phone over USB:</p>
+<pre><code class="hljs language-bash">adb forward tcp:1080 tcp:1080
+</code></pre>
+<p>Since ADB forward can drop when the screen locks or USB is interrupted, use this loop to keep it alive:</p>
+<pre><code class="hljs language-bash"><span class="hljs-keyword">while</span> <span class="hljs-literal">true</span>; <span class="hljs-keyword">do</span>
+    adb forward tcp:1080 tcp:1080
+    <span class="hljs-built_in">sleep</span> 3
+<span class="hljs-keyword">done</span>
+</code></pre>
+<h3 id="step-3%3A-configure-the-browser-for-isolated-test" tabindex="-1"><a class="header-anchor" href="#step-3%3A-configure-the-browser-for-isolated-test">Step 3: Configure the Browser for Isolated Test</a></h3>
+<p>In Firefox:</p>
+<ul>
+<li>Settings → search <strong>proxy</strong> → <strong>Settings…</strong></li>
+<li>Select <strong>Manual proxy configuration</strong></li>
+<li>SOCKS Host: <code>127.0.0.1</code>, Port: <code>1080</code></li>
+<li>Select <strong>SOCKS v5</strong></li>
+<li>Check <strong>Proxy DNS when using SOCKS v5</strong></li>
+<li>Click OK</li>
+</ul>
+<h3 id="results" tabindex="-1"><a class="header-anchor" href="#results">Results</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Download</th>
+<th>Upload</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Campus WiFi (5GHz)</td>
+<td>191 Mbps</td>
+<td>186 Mbps</td>
+</tr>
+<tr>
+<td>This setup (6GHz via ADB)</td>
+<td>285 Mbps</td>
+<td>247 Mbps</td>
+</tr>
+</tbody>
+</table>
+<p>A ~50% improvement in download and ~33% in upload, all over a USB cable with no root or kernel extensions required. And it is also easy to route the system connection to SOCKS5 in system settings.</p>
 
-  </div>
-  <hr />
 </article>
+
       </main>
     </div>
     <footer class="main-footer">

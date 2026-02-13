@@ -8,15 +8,31 @@ tags:
   - socks5
 ---
 
-This blog shows how to use Android ADB and SOCKS to serve "USB Tethering"
+If you have an Android phone with WiFi 6E and a Mac that doesn't support 6GHz WiFi, this guide shows how to use ADB and SOCKS5 to route your Mac's traffic through your phone's faster 6GHz connection—no root or kernel extensions required.
 
 ## Background
 
-It all starts with my internet problem on campus. I noticed that our wifi connection only allows 20MHz for 5G wifi, which impacts both WiFi-5 and WiFi-6 devices. This policy locks the connection speed to 286Mbps. However, I found out they also enabled WiFi 6E 6GHz and it has a higher cap than 5GHz. If I need faster wifi, I have to get on 6GHz, but my MacBook Pro 2021 does not support 6GHz.
+It all starts with my internet problem on campus. I noticed that our WiFi connection only allows 20MHz for 5GHz WiFi, which impacts both WiFi 5 and WiFi 6 devices. This policy locks the connection speed to 286Mbps. However, I found out they also enabled WiFi 6E 6GHz and it has a higher cap than 5GHz. If I need faster WiFi, I have to get on 6GHz, but my MacBook Pro 2021 does not support 6GHz.
+
+## The Solution Stack
+
+Here's how the connection flows:
+
+```
+Mac (Browser) → SOCKS5 Proxy (127.0.0.1:1080)
+                      ↓
+                  ADB (USB)
+                      ↓
+            Termux/microsocks (Phone)
+                      ↓
+            WiFi 6E 6GHz (Phone)
+                      ↓
+                  Internet
+```
 
 ## The WiFi 6E Android Phone
 
-Luckily I have an Android phone that supports WiFi 6E, but its USB tethering is locked to **RNDIS** by the manufacturer ROM. **RNDIS** is supported by Linux and Windows. It was supported on macOS through a third-party project [HoRNDIS](https://github.com/TomHeaven/HoRNDIS), but it is not usable on Apple Silicon MacBooks.
+Luckily, I have a Moto G Stylus 5G (2024) that supports WiFi 6E, but its USB tethering is locked to **RNDIS** by the manufacturer ROM. **RNDIS** is supported by Linux and Windows. It was supported on macOS through a third-party project [HoRNDIS](https://github.com/TomHeaven/HoRNDIS), but it is not usable on Apple Silicon MacBooks.
 
 ## ADB and SOCKS5
 
@@ -32,7 +48,7 @@ This leads us to a network workaround. Wired **ADB** provides a stable USB data 
 pkg install microsocks
 ```
 
-### Step 1: Start the SOCKS5 Proxy on the phone
+### Step 1: Start the SOCKS5 Proxy on the Phone
 
 In Termux, start `microsocks` on port 1080:
 ```bash
@@ -58,7 +74,7 @@ while true; do
 done
 ```
 
-### Step 3: Configure the browser for isolated test
+### Step 3: Configure the Browser for Isolated Test
 
 In Firefox:
 - Settings → search **proxy** → **Settings...**
@@ -75,4 +91,4 @@ In Firefox:
 | Campus WiFi (5GHz) | 191 Mbps | 186 Mbps |
 | This setup (6GHz via ADB) | 285 Mbps | 247 Mbps |
 
-A ~50% improvement in download and ~33% in upload, all over a USB cable with no root or kernel extensions required.
+A ~50% improvement in download and ~33% in upload, all over a USB cable with no root or kernel extensions required. And it is also easy to route the system connection to SOCKS5 in system settings. 

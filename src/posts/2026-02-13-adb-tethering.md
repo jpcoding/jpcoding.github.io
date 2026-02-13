@@ -58,7 +58,7 @@ while true; do
 done
 ```
 
-### Step 3: Configure the browser for isolated testc
+### Step 3: Configure the browser for isolated test
 
 In Firefox:
 - Settings → search **proxy** → **Settings...**

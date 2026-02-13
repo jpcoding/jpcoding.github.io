@@ -1,7 +1,7 @@
 ---
 title: '"Tethering" Over ADB'
 date: 2026-02-13
-permalink: /posts/2026-02-13-adb-tethering
+permalink: /posts/2026-02-13-adb-tethering/
 tags:
   - ADB
   - Network

@@ -4,7 +4,8 @@ title: "Pu Jiao"
 description: "HPC PhD candidate at the University of Kentucky"
 ---
 
-PhD Candidate in Computer Science at the University of Kentucky. My research focuses on high-performance computing, error-bounded lossy compression, and large-scale system optimization.
+
+I am a PhD candidate in Computer Science at the University of Kentucky. My research focuses on high-performance computing, error-bounded lossy compression, and large-scale system optimization. 
 
 ## Highlights
 

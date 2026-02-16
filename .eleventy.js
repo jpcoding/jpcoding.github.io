@@ -29,6 +29,10 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   });
 
+  eleventyConfig.addFilter("pubYear", (dateObj) => {
+    return DateTime.fromJSDate(dateObj).toFormat("yyyy");
+  });
+
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   eleventyConfig.addNunjucksAsyncFilter(

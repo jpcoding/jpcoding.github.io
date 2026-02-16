@@ -28,7 +28,7 @@ eleventyNavigation:
           <h3><a href="{{ pub.url }}">{{ pub.data.title }}</a></h3>
           <p class="publication-entry__meta">
             {% if pub.data.venue %}{{ pub.data.venue }} · {% endif %}
-            {% if pub.date %}{{ pub.date | postDate }}{% endif %}
+            {% if pub.date %}{{ pub.date | pubYear }}{% endif %}
           </p>
           {% if pub.data.authors %}<p class="publication-entry__authors">{{ pub.data.authors }}</p>{% endif %}
           {% if pub.data.excerpt %}<p class="publication-entry__excerpt">{{ pub.data.excerpt | safe }}</p>{% endif %}
@@ -55,7 +55,7 @@ eleventyNavigation:
         <h3><a href="{{ pub.url }}">{{ pub.data.title }}</a></h3>
         <p class="publication-entry__meta">
           {% if pub.data.venue %}{{ pub.data.venue }} · {% endif %}
-          {% if pub.date %}{{ pub.date | postDate }}{% endif %}
+          {% if pub.date %}{{ pub.date | pubYear }}{% endif %}
         </p>
         {% if pub.data.authors %}<p class="publication-entry__authors">{{ pub.data.authors }}</p>{% endif %}
         {% if pub.data.excerpt %}<p class="publication-entry__excerpt">{{ pub.data.excerpt | safe }}</p>{% endif %}
@@ -68,7 +68,7 @@ eleventyNavigation:
       <h3><a href="{{ pub.url }}">{{ pub.data.title }}</a></h3>
       <p class="publication-entry__meta">
         {% if pub.data.venue %}{{ pub.data.venue }} · {% endif %}
-        {% if pub.date %}{{ pub.date | postDate }}{% endif %}
+        {% if pub.date %}{{ pub.date | pubYear }}{% endif %}
       </p>
       {% if pub.data.authors %}<p class="publication-entry__authors">{{ pub.data.authors }}</p>{% endif %}
       {% if pub.data.excerpt %}<p class="publication-entry__excerpt">{{ pub.data.excerpt | safe }}</p>{% endif %}

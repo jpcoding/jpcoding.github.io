@@ -37,5 +37,6 @@ Contact
 - Website: https://jpcoding.github.io
 - LinkedIn: https://www.linkedin.com/in/pu-jiao-4b309b212/
 - GitHub: https://github.com/jpcoding
+- Google Scholar: https://scholar.google.com/citations?user=6blhwnoAAAAJ&hl=en 
 
 <!-- The original template documentation content is hidden for this site. -->

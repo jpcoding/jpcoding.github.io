@@ -19,5 +19,8 @@
   <meta property="og:description" content="{{ description }}">
   <meta name="description" content="{{ description }}">
   <meta name="theme-color" content="#0f0f11">
+  {% if metadata.analytics and metadata.analytics.umami and metadata.analytics.umami.websiteId %}
+  <script defer src="{{ metadata.analytics.umami.src | default('https://cloud.umami.is/script.js') }}" data-website-id="{{ metadata.analytics.umami.websiteId }}"></script>
+  {% endif %}
   <title>{{ title }} | {{ metadata.title }}</title>
 </head>

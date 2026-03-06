@@ -1,5 +1,5 @@
 {
-  "title": "Pu Jiao (JP)",
+  "title": "Pu Jiao — PhD Candidate",
   "url": "https://jpcoding.github.io/",
   "language": "en",
   "description": "High-performance computing researcher focusing on error-bounded lossy compression and large-scale systems.",
@@ -11,5 +11,11 @@
     "scholar": "https://scholar.google.com/citations?user=6blhwnoAAAAJ&hl=en",
     "linkedin": "https://www.linkedin.com/in/pu-jiao-4b309b212/",
     "github": "https://github.com/jpcoding"
+  },
+  "analytics": {
+    "umami": {
+      "websiteId": "cdfe95c1-954a-4030-ad25-3884acdb429e",
+      "src": "https://cloud.umami.is/script.js"
+    }
   }
 }

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/a11y-code.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="96x96" href="https://11ty.dev/img/favicon.png">
+  <!-- add your favicons here -->
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png"> -->
+  
+  <style>
+  	:root{--white:#fafafa;--black:#191919;--gray:#212121;--gray-2:#a6a6a6;--blue:#0070ff;--blue-2:#61dcff;--ff-sans-serif:Roboto,Helvetica,sans-serif;--ff-serif:Garamond,serif;--ff-code:monospace}*{box-sizing:border-box}body{--clr-background:var(--white);--clr-text:var(--black);--clr-text-secondary:var(--gray-2);--clr-link:var(--blue);--ff-current:var(--ff-sans-serif);background:var(--clr-background);color:var(--clr-text);font-family:var(--ff-current);padding:12px;line-height:1.5rem}body.dark{--clr-background:var(--black);--clr-text:var(--white);--clr-link:var(--blue-2)}.main-container{max-width:1200px;margin:auto;display:grid;grid-template-columns:1fr 3fr 1fr;gap:3rem}main{min-height:86vh;padding-top:20px}.side-nav{text-align:end;line-height:2rem}.side-nav .site-title{all:unset}.side-nav .site-title:hover{all:unset;cursor:pointer}.side-nav a{all:unset;padding:8px;cursor:pointer}.side-nav a.active,.side-nav a:hover{background:var(--clr-text);color:var(--clr-background)}.side-nav ul{list-style:none}.side-nav ul li{margin:.5rem 0}.side-nav-inner{padding:20px;position:sticky;top:0}a{color:var(--clr-link)}.breadcrumbs{margin-bottom:1rem}article h1{font-size:2rem;line-height:2.5rem}article h1>a,article h2>a,article h3>a{color:var(--clr-text);text-decoration:none}article a:hover{color:var(--clr-link)}article img{max-width:100%}.thumbnail-container img{max-width:100%}.post-entries{padding:0;list-style:none}.post-entry{margin-bottom:4rem}.post-entry__title a{color:var(--clr-text)}.post-entry__title a:hover{color:var(--clr-link)}.post-entry__date{color:var(--clr-text-secondary)}.bibliography ul{padding:0;list-style:none}.bibliography li{padding-left:3rem;text-indent:-3rem;text-align:left;margin:1rem 0 .2rem 0}.main-footer{text-align:center;margin-top:4rem}.announcement{border-left:4px solid var(--clr-link);background:rgba(0,112,255,.06);padding:1rem 1.25rem;margin:0 0 2rem;border-radius:4px}.announcement h2{margin:0 0 .5rem;font-size:1.15rem;line-height:1.4}.announcement p{margin:.4rem 0}.announcement-cta{font-weight:700}body.dark .announcement{background:rgba(97,220,255,.08)}.cv-intro{display:flex;flex-direction:column;gap:1rem;padding:1.5rem;background:#f5f5f5;border-radius:8px}.cv-contact{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.5rem 1.5rem}.cv-contact a{color:inherit;text-decoration:underline}.cv-grid{margin-top:1.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}.cv-card{border:1px solid #e2e2e2;border-radius:8px;padding:1.25rem;background:#fff}.cv-pill-list{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem}.cv-pill-list li{padding:.35rem .75rem;border-radius:999px;background:#efefef;font-size:.9rem}.cv-download{font-weight:700}.cv-section{margin-top:2.5rem}.cv-section h2{margin-bottom:1rem}.cv-timeline{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:1.5rem}.cv-timeline__date{font-size:.85rem;color:var(--clr-text-secondary);display:block;margin-bottom:.4rem}.cv-publication-list{padding-left:1.25rem}.cv-publication-list li{margin-bottom:.6rem}.cv-teaching-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.75rem}.cv-teaching-list li{display:flex;justify-content:space-between;flex-wrap:wrap;border-bottom:1px solid #eaeaea;padding-bottom:.35rem}.cv-teaching-list span{color:var(--clr-text-secondary)}.post-author{display:none}code{font-size:1.1em}pre{font-size:1em;overflow-x:auto;font-family:var(--ff-code);padding:12px;display:grid}pre code{overflow-x:auto}select{padding:2px;border:1px solid var(--clr-text);background-color:var(--clr-background);color:var(--clr-text);font-size:1em}button{padding:4px;border:1px solid var(--clr-text);color:var(--clr-text);background-color:transparent;cursor:pointer}.side-nav .controls{margin-top:2rem}@media (max-width:1200px){.main-container{grid-template-columns:1fr 3fr}}@media (max-width:720px){body{padding:8px}.main-container{grid-template-columns:1fr;gap:1rem}.side-nav{text-align:start;line-height:1.5rem}.side-nav-inner{position:static;padding:8px 0}.side-nav .site-title{font-weight:700;font-size:1.1rem}.side-nav nav ul{display:flex;flex-wrap:wrap;gap:.25rem .75rem;padding:0;margin:.5rem 0}.side-nav ul li{margin:0}.side-nav a{padding:4px 6px}.side-nav .controls{margin-top:.5rem}main{min-height:auto;padding-top:8px}.cv-teaching-list li{flex-direction:column;gap:.2rem}}@media print{body.dark{--clr-background:#fff;--clr-text:#000;--clr-link:var(--blue)}.side-nav{display:none}.main-footer{display:none}.post-author{display:block}}
+  </style>
+  <meta property="og:title" content="VS Code Remote SSH into an Apptainer Instance on HPC">
+  <meta property="og:image" content="">
+  <meta property="og:description" content="">
+  <meta name="description" content="">
+  <meta name="theme-color" content="#0f0f11">
+  
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="cdfe95c1-954a-4030-ad25-3884acdb429e"></script>
+  
+  <title>VS Code Remote SSH into an Apptainer Instance on HPC | Pu Jiao(JP)-焦谱</title>
+</head>
+
+  <body>
+    <div class="main-container">
+      <aside class="side-nav">
+        <div class="side-nav-inner">
+          <a class="site-title" href="/">
+            Pu Jiao(JP)-焦谱
+          </a>
+          <nav>
+  <ul><li>
+        <a
+          class="nav-link
+            
+              
+            
+          "
+          href="/"
+        > Home</a>
+      </li><li>
+        <a
+          class="nav-link
+            
+              
+            
+          "
+          href="/openings/"
+        > Openings</a>
+      </li><li>
+        <a
+          class="nav-link
+            
+              
+            
+          "
+          href="/publications/"
+        > Publications</a>
+      </li><li>
+        <a
+          class="nav-link
+            
+              
+            
+          "
+          href="/teaching/"
+        > Teaching</a>
+      </li><li>
+        <a
+          class="nav-link
+            
+              
+            
+          "
+          href="/cv/"
+        > CV</a>
+      </li><li>
+        <a
+          class="nav-link
+            
+               active 
+            
+          "
+          href="/posts/"
+        > Posts</a>
+      </li><li>
+        <a
+          class="nav-link
+            
+              
+            
+          "
+          href="/feed.xml"
+        > RSS</a>
+      </li></ul>
+</nav>
+
+          <div class="controls">
+            <details>
+              <summary>Controls</summary>
+              <div>
+  <label for="theme">Theme</label>
+  <select name="theme" id="theme">
+    <option value="system">system</option>
+    <option value="light">light</option>
+    <option value="dark">dark</option>
+  </select>
+</div>
+
+              <div>
+  <label for="font">Font</label>
+  <select name="font" id="font">
+    <option value="sansSerif">sans-serif</option>
+    <option value="serif">serif</option>
+  </select>
+</div>
+
+              <div>
+                <button onclick="print()">Print this page</button>
+              </div>
+            </details>
+          </div>
+        </div>
+      </aside>
+      <main>
+        
+
+<article>
+    <h1>VS Code Remote SSH into an Apptainer Instance on HPC</h1>
+    <div class="post-author">
+      by
+      <strong>
+        
+          Pu Jiao,
+        
+      </strong>
+    <span>Mar 5, 2026</span>
+    </div>
+    <p>If your cluster login environment is too old for the current VS Code server, but you are allowed to run Apptainer or Singularity on compute nodes, you can move the editor target into a newer container without touching the host OS. In my case, I specifically wanted a container with CUDA and a newer userspace, including a newer <code>glibc</code>, so GPU debugging and interactive inspection would work cleanly. This post shows a practical way to do that by running <code>sshd</code> inside the container and reaching it through the normal SSH jump path.</p>
+<h2 id="background" tabindex="-1"><a class="header-anchor" href="#background">Background</a></h2>
+<p>This is useful on clusters where the host userspace is effectively frozen, for example older enterprise Linux images or nodes with outdated <code>glibc</code>. VS Code Remote SSH may fail on the host even though the compute environment itself is perfectly usable. Installing a newer runtime directly on the host is usually fragile, and VS Code tunnel may not be something you want to rely on in a shared HPC environment.</p>
+<p>The workaround is simple: launch a container on the compute node, run <code>sshd</code> inside it, and let VS Code connect to that container instead of the host.</p>
+<h2 id="the-solution-stack" tabindex="-1"><a class="header-anchor" href="#the-solution-stack">The Solution Stack</a></h2>
+<p>The connection path looks like this:</p>
+<pre><code class="hljs">Laptop
+  ↓
+Login node
+  ↓
+Allocated compute node
+  ↓
+Apptainer/Singularity instance
+  ↓
+sshd inside the container
+</code></pre>
+<h2 id="prerequisites" tabindex="-1"><a class="header-anchor" href="#prerequisites">Prerequisites</a></h2>
+<ul>
+<li>You can already SSH from your laptop to the cluster login node.</li>
+<li>You have an interactive allocation on a compute node.</li>
+<li>The cluster allows Apptainer or Singularity instances.</li>
+<li>Your home directory is visible inside the container so <code>~/.ssh/authorized_keys</code> can be reused.</li>
+<li><code>openssh-server</code> is available in the container image.</li>
+</ul>
+<h3 id="step-1%3A-build-an-image-with-sshd" tabindex="-1"><a class="header-anchor" href="#step-1%3A-build-an-image-with-sshd">Step 1: Build an image with <code>sshd</code></a></h3>
+<p>Start from a Rocky 9 CUDA base and bake <code>sshd</code> into the image so the instance can accept SSH connections directly. The definition below is only an example, not a required template. The main point is to prepare an image that has the newer userspace you need for debugging, plus CUDA if you are debugging GPU workloads.</p>
+<pre><code class="hljs language-text">Bootstrap: docker
+From: nvidia/cuda:12.2.0-devel-rockylinux9
+
+%post
+  set -e
+  dnf -y update
+  dnf -y install curl --allowerasing &#x27;dnf-command(config-manager)&#x27;
+  dnf config-manager --set-enabled crb
+  dnf -y install epel-release
+  dnf -y groupinstall &quot;Development Tools&quot;
+  dnf -y install gcc gcc-c++ make cmake wget curl which vim git tmux htop btop \
+    python3 python3-devel python3-pip openssh-server openssh-clients
+  python3 -m pip install --upgrade pip
+  ssh-keygen -A
+  dnf clean all &amp;&amp; rm -rf /var/cache/dnf
+  nvcc --version
+
+%environment
+  export PATH=/usr/local/cuda/bin:$PATH
+  export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+  export APPTAINER_SSHD_PORT=${APPTAINER_SSHD_PORT:-2222}
+
+%startscript
+  /usr/sbin/sshd -D \
+    -p ${APPTAINER_SSHD_PORT:-2222} \
+    -o PidFile=/tmp/sshd.pid \
+    -o &quot;AuthorizedKeysFile=$HOME/.ssh/authorized_keys&quot; \
+    -o StrictModes=no \
+    -o UsePAM=no
+
+%runscript
+  exec /bin/bash &quot;$@&quot;
+</code></pre>
+<p>In practice, prepare this definition file and build the image on your laptop or another machine where you have <code>sudo</code> access:</p>
+<pre><code class="hljs language-bash">sudo apptainer build rocky9_ssh.sif rocky9_ssh.def
+</code></pre>
+<p>If your site still exposes <code>singularity</code> instead of <code>apptainer</code>, the definition file stays the same, and the build command becomes <code>sudo singularity build rocky9_ssh.sif rocky9_ssh.def</code>.</p>
+<h3 id="step-2%3A-start-the-instance-on-the-compute-node" tabindex="-1"><a class="header-anchor" href="#step-2%3A-start-the-instance-on-the-compute-node">Step 2: Start the instance on the compute node</a></h3>
+<p>The image already knows how to start <code>sshd</code>, so the launcher only needs to start the instance, pass the port, and verify the listener.</p>
+<pre><code class="hljs language-bash"><span class="hljs-meta">#!/bin/bash</span>
+<span class="hljs-comment"># start_rocky.sh - Start a Rocky Linux instance with baked-in SSHD</span>
+<span class="hljs-comment"># Usage: ./start_rocky.sh [port] [instance_name] [image_path]</span>
+
+<span class="hljs-built_in">set</span> -euo pipefail
+
+INSTANCE_NAME=<span class="hljs-variable">${2:-rockynv}</span>
+SSHD_PORT=<span class="hljs-variable">${1:-2222}</span>
+SIF=<span class="hljs-variable">${3:-<span class="hljs-variable">${SIF_IMAGE:-<span class="hljs-variable">$PWD</span>/rocky9_ssh.sif}</span>}</span>
+COMPUTE_NODE=$(hostname -s)
+
+<span class="hljs-keyword">if</span> <span class="hljs-built_in">command</span> -v apptainer &gt;/dev/null 2&gt;&amp;1; <span class="hljs-keyword">then</span>
+  CTR=apptainer
+<span class="hljs-keyword">elif</span> <span class="hljs-built_in">command</span> -v singularity &gt;/dev/null 2&gt;&amp;1; <span class="hljs-keyword">then</span>
+  CTR=singularity
+<span class="hljs-keyword">else</span>
+  <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;ERROR: neither apptainer nor singularity was found in PATH&quot;</span>
+  <span class="hljs-built_in">exit</span> 1
+<span class="hljs-keyword">fi</span>
+
+<span class="hljs-keyword">if</span> [ ! -f <span class="hljs-string">&quot;<span class="hljs-variable">$SIF</span>&quot;</span> ]; <span class="hljs-keyword">then</span>
+  <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;ERROR: container image not found: <span class="hljs-variable">$SIF</span>&quot;</span>
+  <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Pass the image path as arg 3 or set SIF_IMAGE before running this script.&quot;</span>
+  <span class="hljs-built_in">exit</span> 1
+<span class="hljs-keyword">fi</span>
+
+<span class="hljs-function"><span class="hljs-title">find_lib</span></span>() {
+  <span class="hljs-built_in">local</span> name=<span class="hljs-variable">$1</span>
+  <span class="hljs-built_in">local</span> path
+  path=$(ldconfig -p 2&gt;/dev/null | grep <span class="hljs-string">&quot;<span class="hljs-variable">$name</span>&quot;</span> | awk <span class="hljs-string">&#x27;{print $NF}&#x27;</span> | <span class="hljs-built_in">head</span> -1)
+  <span class="hljs-keyword">if</span> [ -z <span class="hljs-string">&quot;<span class="hljs-variable">$path</span>&quot;</span> ]; <span class="hljs-keyword">then</span>
+    path=$(find /usr/lib64 /usr/lib /usr/local/lib64 -name <span class="hljs-string">&quot;<span class="hljs-variable">${name}</span>*&quot;</span> 2&gt;/dev/null | <span class="hljs-built_in">head</span> -1)
+  <span class="hljs-keyword">fi</span>
+  <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;<span class="hljs-variable">$path</span>&quot;</span>
+}
+
+LIBCUDA=$(find_lib <span class="hljs-string">&quot;libcuda.so&quot;</span>)
+LIBNVML=$(find_lib <span class="hljs-string">&quot;libnvidia-ml.so&quot;</span>)
+
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;==&gt; Instance  : <span class="hljs-variable">$INSTANCE_NAME</span>&quot;</span>
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;==&gt; Compute   : <span class="hljs-variable">$COMPUTE_NODE</span>&quot;</span>
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;==&gt; Runtime   : <span class="hljs-variable">$CTR</span>&quot;</span>
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;==&gt; SSHD port : <span class="hljs-variable">$SSHD_PORT</span>&quot;</span>
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;==&gt; Image     : <span class="hljs-variable">$SIF</span>&quot;</span>
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;==&gt; libcuda   : <span class="hljs-variable">${LIBCUDA:-not found}</span>&quot;</span>
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;==&gt; libnvml   : <span class="hljs-variable">${LIBNVML:-not found}</span>&quot;</span>
+
+<span class="hljs-keyword">if</span> <span class="hljs-variable">$CTR</span> instance list 2&gt;/dev/null | grep -q <span class="hljs-string">&quot;^<span class="hljs-variable">${INSTANCE_NAME}</span> &quot;</span>; <span class="hljs-keyword">then</span>
+  <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;==&gt; Stopping existing instance: <span class="hljs-variable">$INSTANCE_NAME</span>&quot;</span>
+  <span class="hljs-variable">$CTR</span> instance stop <span class="hljs-string">&quot;<span class="hljs-variable">$INSTANCE_NAME</span>&quot;</span>
+  <span class="hljs-built_in">sleep</span> 1
+<span class="hljs-keyword">fi</span>
+
+BIND_ARGS=<span class="hljs-string">&quot;&quot;</span>
+<span class="hljs-keyword">if</span> [ -n <span class="hljs-string">&quot;<span class="hljs-variable">$LIBCUDA</span>&quot;</span> ] &amp;&amp; [ -f <span class="hljs-string">&quot;<span class="hljs-variable">$LIBCUDA</span>&quot;</span> ]; <span class="hljs-keyword">then</span>
+  BIND_ARGS=<span class="hljs-string">&quot;<span class="hljs-variable">$BIND_ARGS</span> --bind <span class="hljs-variable">${LIBCUDA}</span>&quot;</span>
+<span class="hljs-keyword">fi</span>
+<span class="hljs-keyword">if</span> [ -n <span class="hljs-string">&quot;<span class="hljs-variable">$LIBNVML</span>&quot;</span> ] &amp;&amp; [ -f <span class="hljs-string">&quot;<span class="hljs-variable">$LIBNVML</span>&quot;</span> ]; <span class="hljs-keyword">then</span>
+  BIND_ARGS=<span class="hljs-string">&quot;<span class="hljs-variable">$BIND_ARGS</span> --bind <span class="hljs-variable">${LIBNVML}</span>&quot;</span>
+<span class="hljs-keyword">fi</span>
+
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;==&gt; Starting instance...&quot;</span>
+<span class="hljs-variable">$CTR</span> instance start --nv <span class="hljs-variable">$BIND_ARGS</span> \
+  --<span class="hljs-built_in">env</span> HOME=<span class="hljs-string">&quot;<span class="hljs-variable">${HOME}</span>&quot;</span> \
+  --<span class="hljs-built_in">env</span> SCRATCH=<span class="hljs-string">&quot;<span class="hljs-variable">${SCRATCH:-}</span>&quot;</span> \
+  --<span class="hljs-built_in">env</span> SHARE=<span class="hljs-string">&quot;<span class="hljs-variable">${SHARE:-}</span>&quot;</span> \
+  --<span class="hljs-built_in">env</span> PROJECT=<span class="hljs-string">&quot;<span class="hljs-variable">${PROJECT:-}</span>&quot;</span> \
+  --<span class="hljs-built_in">env</span> PSCRATCH=<span class="hljs-string">&quot;<span class="hljs-variable">${PSCRATCH:-}</span>&quot;</span> \
+  --<span class="hljs-built_in">env</span> APPTAINER_SSHD_PORT=<span class="hljs-string">&quot;<span class="hljs-variable">${SSHD_PORT}</span>&quot;</span> \
+  <span class="hljs-string">&quot;<span class="hljs-variable">$SIF</span>&quot;</span> <span class="hljs-string">&quot;<span class="hljs-variable">$INSTANCE_NAME</span>&quot;</span>
+
+<span class="hljs-built_in">sleep</span> 2
+<span class="hljs-keyword">if</span> ss -tln 2&gt;/dev/null | grep -q <span class="hljs-string">&quot;:<span class="hljs-variable">${SSHD_PORT}</span>&quot;</span>; <span class="hljs-keyword">then</span>
+  <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;==&gt; sshd is listening on port <span class="hljs-variable">$SSHD_PORT</span>&quot;</span>
+  <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;==&gt; Jump target: <span class="hljs-variable">${COMPUTE_NODE}</span>&quot;</span>
+<span class="hljs-keyword">else</span>
+  <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;ERROR: sshd does not appear to be listening on port <span class="hljs-variable">$SSHD_PORT</span>&quot;</span>
+  <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Check: <span class="hljs-variable">$CTR</span> exec instance://<span class="hljs-variable">${INSTANCE_NAME}</span> ps -ef | grep sshd&quot;</span>
+  <span class="hljs-built_in">exit</span> 1
+<span class="hljs-keyword">fi</span>
+</code></pre>
+<p>At this point, the compute node is acting like a temporary SSH jump target for the container.</p>
+<h3 id="step-3%3A-connect-from-your-laptop" tabindex="-1"><a class="header-anchor" href="#step-3%3A-connect-from-your-laptop">Step 3: Connect from your laptop</a></h3>
+<p>Replace <code>&lt;login_node&gt;</code> with your cluster login host, <code>&lt;compute_node&gt;</code> with the actual allocated node name from <code>hostname</code>, and <code>2222</code> with the port you passed to the startup script.</p>
+<pre><code class="hljs language-bash">ssh -J &lt;login_node&gt;,&lt;compute_node&gt; -p 2222 YOUR_USERNAME@localhost
+</code></pre>
+<p>For VS Code Remote SSH, adding a dedicated host entry is more convenient:</p>
+<pre><code class="hljs language-ssh-config">Host rocky-container
+    HostName localhost
+    Port 2222
+    User YOUR_USERNAME
+    ProxyJump &lt;login_node&gt;,&lt;compute_node&gt;
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+</code></pre>
+<p>Once that is in place, VS Code can attach to <code>rocky-container</code> as if it were any other SSH host.</p>
+<h2 id="why-this-is-useful" tabindex="-1"><a class="header-anchor" href="#why-this-is-useful">Why this is useful</a></h2>
+<p>This setup is worth keeping around if you hit any of these cases:</p>
+<ul>
+<li>The cluster host OS is too old for the current VS Code server.</li>
+<li>You need a newer compiler, Python, CUDA userspace, or glibc than the host provides.</li>
+<li>You want to keep your development stack isolated from the shared node environment.</li>
+<li>You want the convenience of Remote SSH without asking the cluster admins to change the base image.</li>
+</ul>
+<p>It is not meant to replace batch jobs or a proper site-supported development workflow. It is mainly a pragmatic escape hatch for debugging, interactive editing, and one-off investigations.</p>
+<h2 id="gotchas" tabindex="-1"><a class="header-anchor" href="#gotchas">Gotchas</a></h2>
+<ul>
+<li><code>StrictModes no</code> is often necessary on shared filesystems where home directory permissions do not look like a normal standalone Linux box.</li>
+<li>If your site rewrites <code>$HOME</code>, <code>$PROJECT</code>, or scratch paths in shell startup files, test the container environment with a plain SSH session first.</li>
+<li>Some clusters disable direct compute-node SSH except through the login node, so <code>ProxyJump</code> is the important part of the setup.</li>
+<li>If the image is shared broadly, baking host keys into <code>%post</code> is not ideal. For a personal development image, it is usually acceptable.</li>
+<li>If your site uses a nondefault SSH port, keep the script argument, the direct <code>ssh</code> command, and the SSH config entry in sync.</li>
+</ul>
+<h2 id="closing-note" tabindex="-1"><a class="header-anchor" href="#closing-note">Closing note</a></h2>
+<p>I would trust the <code>%startscript</code> design over a second ad hoc runtime wrapper. It is simpler, easier to reason about, and matches how container instances are supposed to be started. The only thing I still verify manually is whether the port is actually listening, because cluster networking and filesystem behavior vary more than the container itself.</p>
+
+</article>
+
+      </main>
+    </div>
+    <footer class="main-footer">
+  &copy; Pu Jiao 2026
+</footer>
+
+  </body>
+  
+  <script>
+  function initThemeHandler(){const e=document.querySelector('select[id="theme"]'),t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light",o=localStorage.getItem("theme"),n=document.querySelector('meta[name="theme-color"]'),a=getComputedStyle(document.body);function r(e){"dark"===e?document.body.classList.add("dark"):document.body.classList.remove("dark");const t=a.getPropertyValue("--clr-background");n.setAttribute("content",t)}e.value=o||"system",r("dark"===o||"light"===o?o:t),e.addEventListener("change",(()=>{"system"===e.value?r(t):r(e.value),localStorage.setItem("theme",e.value)}))}function initFontHandler(){const e=getComputedStyle(document.body),t=e.getPropertyValue("--ff-sans-serif"),o=e.getPropertyValue("--ff-serif"),n=localStorage.getItem("font"),a=document.querySelector('select[id="font"]');function r(e){document.body.style.fontFamily="serif"===e?o:t}"serif"===n&&(r(n),a.value=n),a.addEventListener("change",(()=>{r(a.value),localStorage.setItem("font",a.value)}))}initThemeHandler(),initFontHandler();
+  </script>
+</html>

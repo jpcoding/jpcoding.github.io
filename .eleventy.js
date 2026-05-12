@@ -54,6 +54,7 @@ module.exports = function (eleventyConfig) {
   });
 
   md = new MarkdownIt({
+    html: true,
     typographer: true,
     linkify: true,
   });

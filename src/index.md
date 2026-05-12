@@ -4,16 +4,21 @@ title: "Pu Jiao"
 description: "HPC PhD candidate at the University of Kentucky"
 ---
 
+<aside class="announcement" role="note">
+  <h2>Recruiting PhD students — Fall 2026 / Spring 2027 at UTRGV</h2>
+  <p>I will be joining the <strong>Department of Computer Science at the University of Texas Rio Grande Valley (UTRGV)</strong> as a Tenure-Track Assistant Professor starting Fall 2026, and I am looking for self-motivated PhD students for <strong>Fall 2026 or Spring 2027</strong> intake. Full tuition coverage and a competitive stipend are provided.</p>
+  <p><strong>Research areas:</strong> HPC, scientific data compression, GPU computing &amp; parallel algorithms, large-scale scientific data management.</p>
+  <p><a class="announcement-cta" href="/openings/">Full details &amp; how to apply &rarr;</a> &nbsp;·&nbsp; <a href="/openings/zh/">中文版</a></p>
+</aside>
 
 I am a PhD candidate in Computer Science at the University of Kentucky. My research focuses on high-performance computing, error-bounded lossy compression, and large-scale system optimization. 
 
-## Highlights
+## Research Highlights
 
-- Programming: C++ (Advanced), Python (Advanced), JavaScript, SQL, R, MATLAB
-- Frameworks: MPI, OpenMP, CUDA, NumPy, Pandas, SciPy, scikit-learn, TensorFlow
-- Cloud & Infra: AWS, Docker, Kubernetes, Linux/Unix, Git, CI/CD
-- Databases: MongoDB, MySQL, SQLite, Redis
-- Specializations: HPC, algorithm optimization, data analytics, ML
+- **Error-bounded lossy compression** for large-scale scientific data — designing compressors that respect user-specified error tolerances while preserving quantities of interest for downstream analysis.
+- **Artifact characterization and mitigation** in error-controlled lossy compressors (HiPC'23, IPDPS'26).
+- **Quantity-of-Interest preservation** frameworks for scientific data compression (VLDB'22, VLDB'25).
+- **HPC systems and GPU acceleration** for compression pipelines and large-scale scientific data movement.
 
 ## Education
 

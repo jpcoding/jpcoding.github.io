@@ -158,6 +158,32 @@ article img {
   margin-top: 4rem;
 }
 
+.announcement {
+  border-left: 4px solid var(--clr-link);
+  background: rgba(0, 112, 255, 0.06);
+  padding: 1rem 1.25rem;
+  margin: 0 0 2rem;
+  border-radius: 4px;
+}
+
+.announcement h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+  line-height: 1.4;
+}
+
+.announcement p {
+  margin: 0.4rem 0;
+}
+
+.announcement-cta {
+  font-weight: bold;
+}
+
+body.dark .announcement {
+  background: rgba(97, 220, 255, 0.08);
+}
+
 .cv-intro {
   display: flex;
   flex-direction: column;
@@ -317,8 +343,53 @@ button {
 }
 
 @media (max-width: 720px) {
+  body {
+    padding: 8px;
+  }
+
   .main-container {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .side-nav {
+    text-align: start;
+    line-height: 1.5rem;
+  }
+
+  .side-nav-inner {
+    position: static;
+    padding: 8px 0;
+  }
+
+  .side-nav .site-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+  .side-nav nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.75rem;
+    padding: 0;
+    margin: 0.5rem 0;
+  }
+
+  .side-nav ul li {
+    margin: 0;
+  }
+
+  .side-nav a {
+    padding: 4px 6px;
+  }
+
+  .side-nav .controls {
+    margin-top: 0.5rem;
+  }
+
+  main {
+    min-height: auto;
+    padding-top: 8px;
   }
 
   .cv-teaching-list li {

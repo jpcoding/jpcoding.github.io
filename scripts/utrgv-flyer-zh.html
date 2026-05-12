@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>UTRGV 招生</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+    color: #1c1c1c;
+    background: #f4f1ea;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    width: 750px;
+    background: #fff;
+    margin: 0 auto;
+    box-shadow: 0 0 0 1px #eee;
+  }
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #FF671F 0%, #d94300 100%);
+    color: #fff;
+    padding: 32px 36px 36px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: "";
+    position: absolute; right: -80px; top: -80px;
+    width: 240px; height: 240px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 50%;
+  }
+  .hero::after {
+    content: "";
+    position: absolute; right: 30px; bottom: -60px;
+    width: 130px; height: 130px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 50%;
+  }
+  .hero .kicker {
+    font-size: 17px;
+    letter-spacing: 6px;
+    font-weight: 600;
+    opacity: 0.9;
+    margin-bottom: 10px;
+  }
+  .hero h1 {
+    font-size: 46px;
+    line-height: 1.15;
+    font-weight: 800;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+  .hero h2 {
+    font-size: 22px;
+    font-weight: 500;
+    opacity: 0.95;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+  }
+  .hero .term {
+    display: inline-block;
+    margin-top: 14px;
+    background: rgba(0,0,0,0.18);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  /* TAGS */
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 18px 36px 4px;
+    background: #fff;
+  }
+  .tag {
+    background: #fff5ec;
+    color: #d94300;
+    border: 1.5px solid #ffd9b8;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  /* SECTION */
+  section {
+    padding: 18px 36px;
+  }
+  .section-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+  .section-title .bar {
+    width: 5px;
+    height: 22px;
+    background: #FF671F;
+    border-radius: 3px;
+  }
+  .section-title h3 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #1c1c1c;
+    letter-spacing: 1px;
+  }
+  .section-title .en {
+    margin-left: auto;
+    font-size: 13px;
+    color: #999;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  ul.list {
+    list-style: none;
+  }
+  ul.list li {
+    padding: 8px 0 8px 22px;
+    border-bottom: 1px dashed #eee;
+    font-size: 18px;
+    line-height: 1.4;
+    position: relative;
+  }
+  ul.list li::before {
+    content: "";
+    position: absolute;
+    left: 2px; top: 16px;
+    width: 8px; height: 8px;
+    background: #FF671F;
+    border-radius: 50%;
+  }
+  ul.list li:last-child { border-bottom: none; }
+  ul.list li b { color: #d94300; font-weight: 700; }
+  ul.list li .sub {
+    display: block;
+    font-size: 14px;
+    color: #888;
+    margin-top: 2px;
+    line-height: 1.4;
+  }
+  /* GRID variant for research areas */
+  ul.list.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  ul.list.grid li {
+    border-bottom: none;
+    border: 1.5px solid #ffd9b8;
+    background: #fff8f3;
+    border-radius: 8px;
+    padding: 12px 14px 12px 30px;
+  }
+  ul.list.grid li::before {
+    left: 12px; top: 20px;
+  }
+  p.intro {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+  }
+  p.intro b { color: #d94300; }
+  /* APPLY box */
+  .apply-box {
+    background: #fff8f3;
+    border: 2px solid #FF671F;
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-top: 4px;
+  }
+  .apply-box .label {
+    font-size: 14px;
+    color: #d94300;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+  .apply-box .email {
+    font-size: 24px;
+    font-weight: 800;
+    color: #1c1c1c;
+    letter-spacing: 0.5px;
+    font-family: "SF Mono", "Menlo", monospace;
+    word-break: break-all;
+  }
+  .apply-box .subject {
+    margin-top: 12px;
+    padding: 10px 12px;
+    background: #fff;
+    border-left: 4px solid #FF671F;
+    font-size: 15px;
+    color: #555;
+    font-family: "SF Mono", "Menlo", monospace;
+  }
+  .checklist {
+    list-style: none;
+    margin-top: 10px;
+  }
+  .checklist li {
+    font-size: 17px;
+    padding: 5px 0 5px 30px;
+    position: relative;
+    line-height: 1.4;
+  }
+  .checklist li::before {
+    content: "✓";
+    position: absolute;
+    left: 0; top: 6px;
+    width: 22px; height: 22px;
+    background: #FF671F;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 22px;
+  }
+  /* RANK */
+  .ranks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 4px;
+  }
+  .rank {
+    background: linear-gradient(135deg, #fff5ec 0%, #fff 100%);
+    border: 1.5px solid #ffd9b8;
+    border-radius: 8px;
+    padding: 12px 14px;
+  }
+  .rank .num {
+    font-size: 26px;
+    font-weight: 900;
+    color: #FF671F;
+    line-height: 1;
+  }
+  .rank .desc {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+    line-height: 1.35;
+  }
+  /* FOOTER */
+  footer {
+    background: #1c1c1c;
+    color: #fff;
+    padding: 22px 36px;
+    text-align: center;
+  }
+  footer .who {
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  footer .role {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  footer .site {
+    font-size: 15px;
+    color: #FF671F;
+    font-family: "SF Mono", "Menlo", monospace;
+    letter-spacing: 0.5px;
+  }
+  .divider {
+    height: 1px;
+    background: #eee;
+    margin: 0 36px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="hero">
+    <div class="kicker">RECRUITING · FALL 2026 / SPRING 2027</div>
+    <h1>招收博士研究生</h1>
+    <h2>UTRGV 计算机科学系<br>德克萨斯大学格兰德河谷分校</h2>
+    <span class="term">2026 秋 / 2027 春 入学</span>
+  </div>
+
+  <div class="tags">
+    <span class="tag">全额学费减免</span>
+    <span class="tag">月度津贴</span>
+    <span class="tag">不限本科专业</span>
+    <span class="tag">Tenure-Track</span>
+  </div>
+
+  <section>
+    <div class="section-title">
+      <div class="bar"></div>
+      <h3>关于职位</h3>
+      <span class="en">About</span>
+    </div>
+    <p class="intro">
+      本人将于 <b>2026 年秋季</b>加入 UTRGV 计算机科学系，担任<b>终身轨助理教授</b>（Tenure-Track Assistant Professor），现招收 <b>2026 秋季</b> 或 <b>2027 春季</b> 入学的博士研究生加入课题组。
+    </p>
+  </section>
+
+  <div class="divider"></div>
+
+  <section>
+    <div class="section-title">
+      <div class="bar"></div>
+      <h3>研究方向</h3>
+      <span class="en">Research</span>
+    </div>
+    <ul class="list grid">
+      <li><b>高性能计算 (HPC)</b>
+        <span class="sub">High-Performance Computing</span>
+      </li>
+      <li><b>科学数据压缩</b>
+        <span class="sub">Scientific Data Compression</span>
+      </li>
+      <li><b>GPU 计算与并行算法</b>
+        <span class="sub">GPU Computing &amp; Parallel Algorithms</span>
+      </li>
+      <li><b>大规模科学数据管理</b>
+        <span class="sub">Large-Scale Data Management</span>
+      </li>
+    </ul>
+  </section>
+
+  <div class="divider"></div>
+
+  <section>
+    <div class="section-title">
+      <div class="bar"></div>
+      <h3>申请要求</h3>
+      <span class="en">Requirements</span>
+    </div>
+    <ul class="checklist">
+      <li>本科及以上学历，<b>不限专业方向</b>（非 CS 相关专业可能需提供 GRE 成绩）</li>
+      <li>扎实的编程能力</li>
+      <li>对科研的热情和较强的自主学习能力</li>
+    </ul>
+  </section>
+
+  <div class="divider"></div>
+
+  <section>
+    <div class="section-title">
+      <div class="bar"></div>
+      <h3>申请方式</h3>
+      <span class="en">Apply</span>
+    </div>
+    <div class="apply-box">
+      <div class="label">发送邮件至</div>
+      <div class="email">pujiao+phd@uky.edu</div>
+      <div class="subject">
+        主题：PhD Application [学期] [年份] [姓名]
+      </div>
+      <ul class="checklist" style="margin-top: 18px;">
+        <li>个人陈述（研究经历、兴趣、目标）</li>
+        <li>个人简历 (CV)</li>
+        <li>成绩单（非官方版本即可）</li>
+        <li>其他材料：TOEFL/GRE、已发表论文等</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section>
+    <div class="section-title">
+      <div class="bar"></div>
+      <h3>关于 UTRGV</h3>
+      <span class="en">University</span>
+    </div>
+    <p class="intro" style="margin-bottom: 18px;">
+      隶属于<b>德州大学系统</b>的公立研究型大学，工程与计算机科学学院获多项 NSF / NIH 资助。
+    </p>
+    <div class="ranks">
+      <div class="rank">
+        <div class="num">No.1</div>
+        <div class="desc">德州最佳大学<br><span style="font-size:14px;opacity:0.7;">Washington Monthly 2023–2025</span></div>
+      </div>
+      <div class="rank">
+        <div class="num">No.1</div>
+        <div class="desc">德州高校社会流动性<br><span style="font-size:14px;opacity:0.7;">Washington Monthly 2023–2024</span></div>
+      </div>
+      <div class="rank">
+        <div class="num">Top</div>
+        <div class="desc">全美最具创新力学校<br><span style="font-size:14px;opacity:0.7;">U.S. News &amp; World Report 2026</span></div>
+      </div>
+      <div class="rank">
+        <div class="num">No.1</div>
+        <div class="desc">德州高校入学净成本最低<br><span style="font-size:14px;opacity:0.7;">Washington Monthly 2023–2024</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="who">焦谱 · Pu Jiao</div>
+    <div class="role">Incoming Assistant Professor<br>Department of Computer Science · UTRGV</div>
+    <div class="site">jpcoding.github.io/openings/zh/</div>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -9,7 +9,7 @@ permalink: /openings/zh/
 
 # 招收博士研究生 — 2026 秋季 / 2027 春季入学
 
-本人将于 **2026 年秋季**加入**德克萨斯大学格兰德河谷分校（University of Texas Rio Grande Valley, UTRGV）计算机科学系**，担任终身轨助理教授（Tenure-Track Assistant Professor），现招收 **2026 秋季**或 **2027 春季**入学的博士研究生加入课题组。该岗位提供**全额学费减免**及**有竞争力的月度津贴**。
+本人将于 **2026 年秋季**加入**德克萨斯大学格兰德河谷分校（University of Texas Rio Grande Valley, UTRGV）计算机科学系**，担任终身轨助理教授（Tenure-Track Assistant Professor），现招收 **2026 秋季**或 **2027 春季**入学的博士研究生加入课题组。该岗位提供**学费减免**及**有竞争力的月度津贴**。
 
 ## 研究方向
 

@@ -98,7 +98,7 @@ a {
 
 article h1 {
   font-size: 2rem;
-  line-height: 2.5rem;
+  line-height: 1.35;
 }
 
 article h1 > a,
@@ -106,6 +106,10 @@ article h2 > a,
 article h3 > a {
   color: var(--clr-text);
   text-decoration: none;
+}
+
+article a {
+  text-underline-offset: 0.2em;
 }
 
 article a:hover {

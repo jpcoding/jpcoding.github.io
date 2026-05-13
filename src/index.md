@@ -5,10 +5,10 @@ description: "HPC PhD candidate at the University of Kentucky"
 ---
 
 <aside class="announcement" role="note">
-  <h2>Recruiting PhD students — Fall 2026 / Spring 2027 at UTRGV</h2>
-  <p>I will be joining the <strong>Department of Computer Science at the University of Texas Rio Grande Valley (UTRGV)</strong> as a Tenure-Track Assistant Professor starting Fall 2026, and I am looking for self-motivated PhD students for <strong>Fall 2026 or Spring 2027</strong> intake. Full tuition coverage and a competitive stipend are provided.</p>
-  <p><strong>Research areas:</strong> HPC, scientific data compression, GPU computing &amp; parallel algorithms, large-scale scientific data management.</p>
-  <p><a class="announcement-cta" href="/openings/">Full details &amp; how to apply &rarr;</a> &nbsp;·&nbsp; <a href="/openings/zh/">中文版</a></p>
+<h2>Recruiting PhD students — Fall 2026 / Spring 2027 at UTRGV</h2>
+<p>I will be joining the <strong>Department of Computer Science at the University of Texas Rio Grande Valley (UTRGV)</strong> as a Tenure-Track Assistant Professor starting Fall 2026, and I am looking for self-motivated PhD students for <strong>Fall 2026 or Spring 2027</strong> intake. Full tuition coverage and a competitive stipend are provided.</p>
+<p><strong>Research areas:</strong> HPC, scientific data compression, GPU computing &amp; parallel algorithms, large-scale scientific data management.</p>
+<p><a class="announcement-cta" href="/openings/">Full details &amp; how to apply &rarr;</a> &nbsp;·&nbsp; <a href="/openings/zh/">中文版</a></p>
 </aside>
 
 I am a PhD candidate in Computer Science at the University of Kentucky. My research focuses on high-performance computing, error-bounded lossy compression, and large-scale system optimization. 

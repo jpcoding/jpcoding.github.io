@@ -15,7 +15,8 @@ I am a PhD candidate in Computer Science at the University of Kentucky. My resea
 
 ## News
 
-- **Jul 2026** — Awarded a 200K-credit [NSF ACCESS](https://access-ci.org/) Explore allocation to support GPU/HPC compute for my research.
+- **Jul 2026** — Awarded a NAIRR Start-Up allocation (project NAIRR260309) at UTRGV: 2,000 GPU hours on PSC Bridges-2 GPU (2026-07-14 to 2026-10-13).
+- **Jul 2026** — Awarded a 200K-credit [NSF ACCESS](https://access-ci.org/) Explore allocation (project CIS261303: *Deep Learning-Based Mitigation of Artifacts in Error-Bounded Lossy Compression for Scientific Data*) to support GPU/HPC compute for my research. Thanks, NSF!
 
 ## Research Highlights
 

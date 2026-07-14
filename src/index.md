@@ -13,6 +13,10 @@ description: "HPC PhD candidate at the University of Kentucky"
 
 I am a PhD candidate in Computer Science at the University of Kentucky. My research focuses on high-performance computing, error-bounded lossy compression, and large-scale system optimization. 
 
+## News
+
+- **Jul 2026** — Awarded a 200K-credit [NSF ACCESS](https://access-ci.org/) Explore allocation to support GPU/HPC compute for my research.
+
 ## Research Highlights
 
 - **Error-bounded lossy compression** for large-scale scientific data — designing compressors that respect user-specified error tolerances while preserving quantities of interest for downstream analysis.

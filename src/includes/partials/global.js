@@ -66,5 +66,29 @@ function initFontHandler() {
   }
 }
 
+function initEmailObfuscation() {
+  const elements = document.querySelectorAll("[data-email-u][data-email-d]");
+  elements.forEach((el) => {
+    try {
+      const u = atob(el.getAttribute("data-email-u"));
+      const d = atob(el.getAttribute("data-email-d"));
+      const email = `${u}@${d}`;
+      if (el.getAttribute("data-email-text-only") === "true") {
+        el.textContent = email;
+      } else {
+        const link = document.createElement("a");
+        link.href = `mailto:${email}`;
+        link.textContent = email;
+        el.innerHTML = "";
+        el.appendChild(link);
+      }
+    } catch (e) {
+      // Keep fallback text
+    }
+  });
+}
+
 initThemeHandler();
 initFontHandler();
+initEmailObfuscation();
+

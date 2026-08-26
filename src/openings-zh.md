@@ -27,7 +27,7 @@ permalink: /openings/zh/
 
 ## 申请方式
 
-请发送邮件至 **[pujiao+phd@uky.edu](mailto:pujiao+phd@uky.edu)**，邮件主题格式如下：
+请发送邮件至 **<span class="obfuscated-email" data-email-u="cHUuamlhbytwaGQ=" data-email-d="dXRyZ3YuZWR1">pu.jiao+phd [at] utrgv [dot] edu</span>**，邮件主题格式如下：
 
 > **PhD Application [学期] [年份] [姓名]**
 

@@ -27,7 +27,7 @@ I will be joining the **Department of Computer Science at the University of Texa
 
 ## How to Apply
 
-Email **[pujiao+phd@uky.edu](mailto:pujiao+phd@uky.edu)** with the subject line:
+Email **<span class="obfuscated-email" data-email-u="cHUuamlhbytwaGQ=" data-email-d="dXRyZ3YuZWR1">pu.jiao+phd [at] utrgv [dot] edu</span>** with the subject line:
 
 > **PhD Application [Semester] [Year] [Your Name]**
 

@@ -41,7 +41,7 @@ I am a PhD candidate in Computer Science at the University of Kentucky. My resea
 
 ## Contact
 
-- Email: jiaopujp [at] gmail [dot] com
+- Email: <span class="obfuscated-email" data-email-u="cHUuamlhbw==" data-email-d="dXRyZ3YuZWR1">pu.jiao [at] utrgv [dot] edu</span>
 - Website: https://jpcoding.github.io
 - LinkedIn: https://www.linkedin.com/in/pu-jiao-4b309b212/
 - GitHub: https://github.com/jpcoding

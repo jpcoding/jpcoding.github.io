@@ -352,7 +352,15 @@
     </div>
     <div class="apply-box">
       <div class="label">发送邮件至</div>
-      <div class="email">pujiao+phd@uky.edu</div>
+      <div class="email" id="flyer-email">pu.jiao+phd [at] utrgv [dot] edu</div>
+      <script>
+        (function() {
+          var u = "cHUuamlhbytwaGQ=";
+          var d = "dXRyZ3YuZWR1";
+          var el = document.getElementById("flyer-email");
+          if (el) el.textContent = atob(u) + "@" + atob(d);
+        })();
+      </script>
       <div class="subject">
         主题：PhD Application [学期] [年份] [姓名]
       </div>

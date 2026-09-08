@@ -5,8 +5,6 @@ description: "Fully funded PhD positions in HPC, scientific data compression, an
 permalink: /openings/
 ---
 
-<p><a href="/openings/zh/">中文版 &rarr;</a></p>
-
 # PhD Positions Available — Fall 2026 / Spring 2027
 
 I will be joining the **Department of Computer Science at the University of Texas Rio Grande Valley (UTRGV)** as a Tenure-Track Assistant Professor starting Fall 2026, and I am looking for **self-motivated PhD students** to join my research group, starting **Fall 2026 or Spring 2027**. The position provides **full tuition coverage** and a **competitive monthly stipend**.

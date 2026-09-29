@@ -61,4 +61,5 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Reviewer, IEEE Transactions on Parallel and Distributed Systems (TPDS), IEEE Transactions on Dependable and Secure Computing (TDSC), Frontiers of Computer Science, PLOS One
+* Program Committee Member, ECHO Workshop at SC26 (International Conference for High Performance Computing, Networking, Storage, and Analysis)

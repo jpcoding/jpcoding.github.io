@@ -27,7 +27,7 @@ I am an Assistant Professor of Computer Science at the University of Texas Rio G
 
 ## Education
 
-- Ph.D. in Computer Science (Expected May 2026), University of Kentucky, Lexington, KY
+- Ph.D. in Computer Science (May 2026), University of Kentucky, Lexington, KY
 - M.S. in Civil Engineering, Missouri University of Science and Technology
 - B.Eng. in Civil Engineering, Xi'an Jiaotong University
 
